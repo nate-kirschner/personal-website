@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/personal-website/static/css/main.eeab39d6.css",
+    "main.js": "/personal-website/static/js/main.096e63ab.js",
+    "static/js/787.e1b1c231.chunk.js": "/personal-website/static/js/787.e1b1c231.chunk.js",
+    "static/media/ImageProcessSharpen.png": "/personal-website/static/media/ImageProcessSharpen.1fe296cc6b474694b103.png",
+    "static/media/ImageProcessAlter.png": "/personal-website/static/media/ImageProcessAlter.c87a5adca43e3a59d34e.png",
+    "static/media/ImageProcessImport.png": "/personal-website/static/media/ImageProcessImport.e4228c4bfd0bdeb8a4a6.png",
+    "static/media/ImageProcessLayers.png": "/personal-website/static/media/ImageProcessLayers.c11cc29e55743d275354.png",
+    "static/media/ImageProcessSepia.png": "/personal-website/static/media/ImageProcessSepia.b54c29dab0d794cf5a3a.png",
+    "static/media/ImageProcessBlur.png": "/personal-website/static/media/ImageProcessBlur.168ac973b7d0a0a12d1c.png",
+    "static/media/ImageProcessGrayscale.png": "/personal-website/static/media/ImageProcessGrayscale.4557ef05bcd11380a35a.png",
+    "static/media/bestBallHome.png": "/personal-website/static/media/bestBallHome.9acf1b70f5cd6ff3574c.png",
+    "static/media/bestBallLeaderboard.png": "/personal-website/static/media/bestBallLeaderboard.e87396ddcc28d0e3a8bb.png",
+    "static/media/ImageProcessMosaic.png": "/personal-website/static/media/ImageProcessMosaic.fef53339b8f436806a5c.png",
+    "static/media/ImageProcessorAddLayer.png": "/personal-website/static/media/ImageProcessorAddLayer.d19ed9594ee2098abd6e.png",
+    "static/media/bestBallRoster.png": "/personal-website/static/media/bestBallRoster.921ef4711508d5e81eb5.png",
+    "static/media/bestBallLeagues.png": "/personal-website/static/media/bestBallLeagues.2470407ace5d3a62783a.png",
+    "static/media/Resume.pdf": "/personal-website/static/media/Resume.245644f3f098709373c3.pdf",
+    "static/media/profile-pic.jpg": "/personal-website/static/media/profile-pic.f4fc9b618e129d0364a4.jpg",
+    "index.html": "/personal-website/index.html",
+    "main.eeab39d6.css.map": "/personal-website/static/css/main.eeab39d6.css.map",
+    "main.096e63ab.js.map": "/personal-website/static/js/main.096e63ab.js.map",
+    "787.e1b1c231.chunk.js.map": "/personal-website/static/js/787.e1b1c231.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eeab39d6.css",
+    "static/js/main.096e63ab.js"
+  ]
+}
