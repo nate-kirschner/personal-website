@@ -1,0 +1,192 @@
+@import "./defaults.scss";
+
+.homepage {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 45% 55%;
+    background: linear-gradient(180deg, rgb(23, 23, 23) 13%, rgba(59, 54, 111, 1) 88%);
+    scroll-snap-align: start;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    @include tablet {
+        grid-template-columns: 55% 45%;
+        grid-template-rows: 25% 5% max-content 1fr;
+    }
+    
+    @include laptop {
+        grid-template-columns: 60% 40%;
+        grid-template-rows: 15% 5% max-content 1fr;
+    }
+}
+
+.homepage .titleBlock {
+    grid-row-start: 0;
+    width: 90%;
+    height: 90%;
+    margin: 10% auto 0 auto;
+
+    @include tablet {
+        width: 100%;
+        grid-column: 1 / 1;
+        grid-row: 1 / 5;
+        margin: 40vh auto auto 5%;
+    }
+}
+
+.homepage .titleBlock .mainTitle {
+    font-size: 36px;
+    color: white;
+    font-weight: 800;
+    margin: auto 10px;
+    
+    
+
+    @include largePhones {
+        font-size: 38px;
+    }
+
+    @include tablet {
+        font-size: 38px;
+    }
+
+    @include laptop {
+        font-size: 42px;
+    }
+
+    @include desktop {
+        font-size: 50px;
+    }
+
+    @include largeDesktop {
+        font-size: 70px;
+    }
+
+    @include wideScreen {
+        font-size: 100px;
+    }
+}
+
+.homepage .titleBlock .titleDescription {
+    font-size: 18px;
+    color: white;
+    font-weight: 400;
+    margin: 10px 10px;
+
+    @include laptop {
+        font-size: 23px;
+        margin: 10px 25px;
+    }
+
+    @include desktop {
+        font-size: 26px;
+        margin: 10px 20px;
+    }
+
+    @include largeDesktop {
+        font-size: 30px;
+        margin: 20px 30px;
+    }
+
+    @include wideScreen {
+        font-size: 50px;
+        margin: 30px 40px;
+    }
+}
+
+.homepage .menuBlock {
+    grid-row-start: 2;
+    width: 90%;
+    height: 90%;
+    margin: 5% auto 0 auto;
+
+    @include tablet {
+        width: 100%;
+        grid-row: 1 / 5;
+        margin: 30vh auto;
+        grid-column: 2 / 2;
+    }
+
+    @include laptop {
+        margin: 28vh auto;
+    }
+
+    @include desktop {
+        margin: 30vh auto;
+    }
+
+    @include wideScreen {
+
+    }
+
+}
+
+.homepage .menuBlock .menuItem {
+    color: white;
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: 20px;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    @include laptop {
+        font-size: 22px;
+        margin-bottom: 24px;
+    }
+
+    @include desktop {
+        font-size: 26px;
+    }
+
+    @include largeDesktop {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+
+    @include wideScreen {
+        font-size: 45px;
+        margin-bottom: 65px;
+    }
+}
+
+.cursor {
+    width: 8px;
+    height: 40px;
+    display: inline-block;
+    color: white;
+    animation: blink 1.5s infinite steps(1, end);
+}
+
+@keyframes blink {
+    from {
+        color: white;
+    }
+    50% {
+        color: transparent;
+    }
+    to {
+        color: white;
+    }
+}
+
+.word {
+    display: inline-block;
+}
+
+.letter {
+    
+    display: inline-block;
+    transition: transform .5s;
+
+    &.break {
+        display: inline-block;
+        transition: transform .5s;
+    }
+
+    &:hover {
+        transform: rotate(180deg);
+        transition: transform .5s;
+    }
+}
