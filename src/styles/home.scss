@@ -178,15 +178,15 @@
 .letter {
     
     display: inline-block;
-    transition: transform .5s;
+    transition: transform .3s;
 
     &.break {
         display: inline-block;
-        transition: transform .5s;
+        transition: transform .3s;
     }
 
     &:hover {
-        transform: rotate(180deg);
-        transition: transform .5s;
+        transform: translateY(-20%);
+        transition: transform .3s;
     }
 }

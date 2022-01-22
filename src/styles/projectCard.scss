@@ -3,7 +3,6 @@
 .projectCard {
     border: 1px solid white;
     width: 90%;
-    height: 25vh;
     margin: 20px auto;
     border-radius: 25px;
     overflow-x: hidden;
@@ -78,14 +77,16 @@
 
 .projectCard#selected {
     height: 80vh;
-    transition: height .4s;
+    min-height: 80vh;
+    transition: min-height .4s;
     overflow-y: scroll;
     overflow-x: hidden;
 }
 
 .projectCard#not-selected {
-    height: 20vh;
-    transition: height .4s;
+    height: max-content;
+    min-height: 20vh;
+    transition: min-height .4s;
     overflow-y: hidden;
     overflow-x: hidden;
 }

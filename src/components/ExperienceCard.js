@@ -5,7 +5,7 @@ export default function ExperienceCard({ titleDiv, title, date, num, onClick, ac
 
     const myRef = useRef(null)
     const executeScroll = () => {
-        setTimeout(() => myRef.current.scrollIntoView({ behavior: "smooth", block: "start" }), 400);
+        // setTimeout(() => myRef.current.scrollIntoView({ behavior: "smooth", block: "start" }), 400);
     }
 
     const chooseSide = () => {
@@ -14,7 +14,7 @@ export default function ExperienceCard({ titleDiv, title, date, num, onClick, ac
 
     return (
         <>
-            <div className="expScroll" ref={myRef} style={{ gridRow: `${num} / ${num}`}}/>
+            {/* <div className="expScroll" ref={myRef} style={{ gridRow: `${num} / ${num}`}}/> */}
             <div
                 className={"experienceCard " + chooseSide()}
                 style={{ gridRowStart: `${num}` }}

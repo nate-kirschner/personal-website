@@ -29,7 +29,7 @@ export default function Experience({ headerClicked, allRefs, scrollToPage }) {
                     title="Power Advocate Software Developer Coop"
                     date="Jan 2022 - July 2022"
                     num={1}
-                    nClick={onClick}
+                    onClick={onClick}
                     active={activeCard}
                 />
                 <ExperienceCard

@@ -156,7 +156,7 @@
 .headerMenu#blur .menuItem {
     color: #808080;
     left: 0;
-    transition: left 1s;
+    // transition: left 1s;
     text-shadow: 2px 2px black;
     font-size: var(--phone-font-size);
     font-weight: 700;
@@ -188,5 +188,32 @@
 
     @include wideScreen {
         font-size: var(--wideScreen-font-size);
+    }
+}
+
+.dropdownTriangle {
+    margin-left: 10px;
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid white;
+    padding-top: 5px;
+    display: inline-block;
+    position: relative;
+    top: 0;
+
+    @include largeDesktop {
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-top: 15px solid white;
+        padding-top: 7px;
+    }
+
+    @include wideScreen {
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid white;
+        padding-top: 10px;
     }
 }

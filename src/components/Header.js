@@ -1,5 +1,5 @@
 import "../styles/header.scss";
-import { useState, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 
 export default function Header({ title, clicked, allRefs, scrollToPage }) {
 
@@ -10,6 +10,7 @@ export default function Header({ title, clicked, allRefs, scrollToPage }) {
     const titleRef = useRef(null);
 
     const clickHeader = () => {
+        console.log("header clicked")
         if (blur) {
             document.body.style.overflow = "auto";
             headerRef.current.style.position = "sticky";
@@ -18,12 +19,13 @@ export default function Header({ title, clicked, allRefs, scrollToPage }) {
             headerRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
             document.body.style.overflow = "hidden";
         }
-        
+
         clicked(!blur);
         setBlur(!blur);
     }
 
     const clickMenu = (title) => {
+        console.log("menu clicked")
         clickHeader();
         setTimeout(() => scrollToPage(allRefs[title]), 1);
     }
@@ -88,6 +90,7 @@ export default function Header({ title, clicked, allRefs, scrollToPage }) {
                 onClick={() => clickHeader()}
             >
                 {title}
+                {!blur && <div className="dropdownTriangle" /> }
             </h2>
             {
                 blur && titleRef.current &&

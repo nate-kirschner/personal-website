@@ -20,14 +20,14 @@ export default function ProjectCard({ title, description, cardClickedFunction, s
 
     const myRef = useRef(null)
     const executeScroll = () => {
-        setTimeout(() => {
-            myRef.current.scrollIntoView({ behavior: "smooth", block: "start" })
-        }, 400);
+        // setTimeout(() => {
+        //     myRef.current.scrollIntoView({ behavior: "smooth", block: "start" })
+        // }, 400);
     }
 
     return (
         <>
-            <div className="scrolled" id={selected === title ? "selected" : "not-selected"} ref={myRef} />
+            {/* <div className="scrolled" id={selected === title ? "selected" : "not-selected"} ref={myRef} /> */}
             <div
                 className="projectCard"
                 onClick={() => {
@@ -36,7 +36,7 @@ export default function ProjectCard({ title, description, cardClickedFunction, s
                 }}
                 id={selected === title ? "selected" : "not-selected"}
             >
-                <div className="scroll" />
+                {/* <div className="scroll" /> */}
                 <h3 className="cardTitle">{title}</h3>
                 {description}
                 {
