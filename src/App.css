@@ -36,3 +36,38 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+.starDiv {
+  width: 100vw;
+  height: 100vh;
+}
+
+.star {
+  position: absolute;
+  top: 50px;
+  /* left: 50px; */
+  /* width: 5px; */
+  /* height: 5px; */
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 0 5px 1px white;
+  /* animation: stars 1.5s ease-in-out infinite; */
+}
+
+@keyframes stars {
+  from {
+    background-color: white;
+  }
+
+  50% {
+    background-color: transparent;
+    box-shadow: 0 0 1px 1px transparent;
+
+  }
+  
+  to {
+    background-color: white;
+  }
+}
