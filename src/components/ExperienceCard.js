@@ -1,9 +1,7 @@
 import "../styles/experienceCard.scss";
-import { useRef } from 'react';
 
 export default function ExperienceCard({ titleDiv, title, date, num, onClick, active }) {
 
-    const myRef = useRef(null)
     const executeScroll = () => {
         // setTimeout(() => myRef.current.scrollIntoView({ behavior: "smooth", block: "start" }), 400);
     }
@@ -83,16 +81,14 @@ const experienceText = {
                 As a teaching assistant, my responsibilities include holding office
                 hours, teaching and assisting in labs, and grading assignments. By
                 teaching other students the material for this Object Oriented Deisgn
-                class, I hope to reinforce and the material for myself and gain a better understanding.
-                <br /><br />
-                This position begins in Fall 2021 so I will update this accordingly.
+                class, I have reinforced the material for myself and gained a better understanding of Object-Oriented principles.
             </p>
         </div>
     ),
-    "Power Advocate Software Developer Coop": (
+    "PowerAdvocate Software Developer Coop": (
         <div>
             <p className="experienceBlockText">
-                On Going -- need to fill in later
+                This is my current co-op position which will end in July 2022. I am working on the Workflow team at PowerAdvocate. Through this experience I have gained a better understanding of their tech stack, which includes ReactJS, NodeJS, and a number of databases and other technologies. 
             </p>
         </div>
     )

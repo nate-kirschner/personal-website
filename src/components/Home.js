@@ -33,7 +33,7 @@ export default function Home({ allRefs, scrollToPage }) {
                     </div>
                     {/* Hi, I'm Nate Kirschner. */}
                 </h1>
-                <h2 className="titleDescription">A Computer Science Student Interested in Web and Software Development.</h2>
+                <h2 className="titleDescription">A Computer Science Student and Aspiring Software Developer.</h2>
             </div >
             <div className="menuBlock">
                 <h3 className="menuItem" onClick={() => scrollToPage(allRefs["About Me"])}>About Me</h3>

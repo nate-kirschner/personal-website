@@ -6,6 +6,9 @@
     margin: 20px auto;
     border-radius: 25px;
     overflow-x: hidden;
+    // height: 20vh;
+    // min-height: 20vh;
+    // transition: min-height .4s;
 }
 
 .scrolled#selected {
@@ -16,8 +19,9 @@
 }
 
 .projectCard .cardTitle {
+    display: inline-block;
     color: white;
-    margin-top: 15px;
+    margin-top: 40px;
 
     @include largePhones {
         font-size: 20px;
@@ -40,7 +44,7 @@
     }
 
     @include wideScreen {
-        margin-top: 30px;
+        margin-top: 50px;
         font-size: 50px;
     }
 }
@@ -77,18 +81,20 @@
 
 .projectCard#selected {
     height: 80vh;
-    min-height: 80vh;
-    transition: min-height .4s;
+    transition: height .4s;
     overflow-y: scroll;
     overflow-x: hidden;
 }
 
 .projectCard#not-selected {
-    height: max-content;
-    min-height: 20vh;
-    transition: min-height .4s;
+    height: 10em;
+    transition: height .4s;
     overflow-y: hidden;
     overflow-x: hidden;
+
+    @include largeDesktop {
+        height: 15em;
+    }
 }
 
 
@@ -97,7 +103,7 @@
 // project card slides
 
 .projectContent {
-
+    
 }
 
 .projectText {
@@ -142,6 +148,10 @@
     margin: 1em;
     border-radius: 15px;
 
+    &.tohNewsImage {
+        width: 95%;
+    }
+
     @include tablet {
         width: 80%;
     }
@@ -160,5 +170,23 @@
 
     @include wideScreen {
         width: 50%;
+    }
+}
+
+.viewInNewTabIcon {
+    display: inline;
+    margin-left: 10px;
+    // background-color: red;
+}
+
+.iconsSource {
+    position: relative;
+    top: 0;
+    // text-color: gray;
+    // text-decoration: none;
+
+    a {
+        color: rgb(172, 172, 172);
+        // text-decoration: none;
     }
 }

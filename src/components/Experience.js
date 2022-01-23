@@ -25,8 +25,8 @@ export default function Experience({ headerClicked, allRefs, scrollToPage }) {
             <div className={"timelineDiv " + (expanded ? "expanded" : "")} id={side}>
                 <div className="timelineBar" />
                 <ExperienceCard
-                    titleDiv={<h3 className="cardTitle">Power Advocate Software Developer Coop</h3>}
-                    title="Power Advocate Software Developer Coop"
+                    titleDiv={<h3 className="cardTitle">PowerAdvocate Software Developer Coop</h3>}
+                    title="PowerAdvocate Software Developer Coop"
                     date="Jan 2022 - July 2022"
                     num={1}
                     onClick={onClick}
