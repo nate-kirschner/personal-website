@@ -15,17 +15,15 @@ export default function AboutMe({headerClicked, allRefs, scrollToPage}) {
                 <p className="aboutText">
                     Hi, I'm Nate Kirschner.
                     <br/><br/>
-                    I'm a <div className="red">Computer Science</div> student at Northeastern
-                    University with a minor in Business Administration. Within the
-                    computer science
-                    major, my concentration is Software, and I'm interested in working
-                    as a Software or Web Developer.
+                    Currently, I'm a computer science undergraduate student at Northeastern University with a minor in business administration on track to graduate in May 2024. Within the computer science major, my concentration is software, and I'm interested in working as a software or web developer.
                     <br/><br/>
-                    I'm currently working as a Software Developer <div className="red">Co-op</div> at PowerAdvocate. I'm on the workflow team helping to improve their software. Before this, I worked as a teaching aassistant for the Object Oriented Design class at Northeastern.
+                    For my first Co-op, I'm gaining experience as a software developer at PowerAdvocate where I'm on the workflow team helping to improve their software.
+                    <br/>
+                    My prior experience includes working as a teaching assistant for the Object Oriented Design class at Northeastern. In addition, I’ve also developed a number of personal projects you can find in the projects section.     
                     <br/><br/>
-                    If you want to contact me, my email is <a
+                    Please contact me at <a
                     href="mailto:nmkirschner@gmail.com">nmkirschner@gmail.com</a>.
-                    Or you can find me on <a
+                    or connect with me on <a
                     href="https://www.linkedin.com/in/nathan-kirschner"
                     target="_blank" rel="noreferrer">LinkedIn</a>.
                     <br/><br/>

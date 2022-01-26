@@ -44,14 +44,13 @@ function App() {
       let top = Math.floor(Math.random() * 100);
       let left = Math.floor(Math.random() * 100);
       let width = Math.floor(Math.random() * 5);
-      let animationDuration = Math.floor(Math.random() * 1000) / 100 + 1;
-      let animationDelay = Math.floor(Math.random() * 1000) / 100;
+      let animationDuration = Math.floor(Math.random() * 2500) / 100 + 1;
       let style = {
         top: `${top}vh`,
         left: `${left}vw`,
         width: `${width}px`,
         height: `${width}px`,
-        animation: `stars ${animationDuration}s ease-in-out infinite ${animationDelay}s`,
+        animation: `stars ${animationDuration}s ease-in-out infinite`,
       }
       stars[i] = <div className="star" id={`${i}`} style={style}/>
     }
