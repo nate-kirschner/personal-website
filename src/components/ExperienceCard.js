@@ -38,7 +38,7 @@ export default function ExperienceCard({ titleDiv, title, date, num, onClick, ac
 
 const experienceText = {
     "Started At Northeastern University": (
-        <div>
+        <div className="experienceText">
             <p className="experienceBlockText">Major: Computer Science</p>
             <p className="experienceBlockText">Minor: Business Administration</p>
             <p className="experienceBlockText">Expected Graduation: 2024</p>
@@ -46,7 +46,7 @@ const experienceText = {
         </div>
     ),
     "NEU Virtual Reality Club Member": (
-        <div>
+        <div className="experienceText">
             <p className="experienceBlockText">
                 As part of the Software Development team, I worked on a virtual reality,
                 Boston-based scavenger hunt app during the Fall
@@ -61,7 +61,7 @@ const experienceText = {
         </div>
     ),
     "Webscraping Freelance": (
-        <div>
+        <div className="experienceText">
             <p className="experienceBlockText">
                 During March 2021, I was hired as an independent contractor to gather
                 information from the web
@@ -76,7 +76,7 @@ const experienceText = {
         </div>
     ),
     "Object Oriented Design Teaching Assistant": (
-        <div>
+        <div className="experienceText">
             <p className="experienceBlockText">
                 As a teaching assistant, my responsibilities include holding office
                 hours, teaching and assisting in labs, and grading assignments. By
@@ -86,7 +86,7 @@ const experienceText = {
         </div>
     ),
     "PowerAdvocate Software Developer Coop": (
-        <div>
+        <div className="experienceText">
             <p className="experienceBlockText">
                 This is my current co-op position which will end in July 2022. I am working on the Workflow team at PowerAdvocate. Through this experience I have gained a better understanding of their tech stack, which includes ReactJS, NodeJS, and a number of databases and other technologies. 
             </p>

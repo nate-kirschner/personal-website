@@ -1,14 +1,22 @@
 @import './defaults.scss';
 
 .projectCard {
-    border: 1px solid white;
-    width: 90%;
-    margin: 20px auto;
+    // border: 1px solid white;
+    width: 50%;
+    margin: 50px auto;
     border-radius: 25px;
     overflow-x: hidden;
+    box-shadow: 5px 5px 15px 5px black;
     // height: 20vh;
     // min-height: 20vh;
     // transition: min-height .4s;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 5px 5px 5px 5px black;
+    }
+
+    background-color: rgba(44, 32, 255, .1);
 }
 
 .scrolled#selected {
@@ -21,6 +29,7 @@
 .projectCard .cardTitle {
     display: inline-block;
     color: white;
+    font-weight: 500;
     margin-top: 40px;
 
     @include largePhones {
@@ -67,7 +76,7 @@
     }
 
     @include desktop {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     @include largeDesktop {
@@ -84,6 +93,7 @@
     transition: height .4s;
     overflow-y: scroll;
     overflow-x: hidden;
+    box-shadow: 5px 5px 5px 5px black;
 }
 
 .projectCard#not-selected {

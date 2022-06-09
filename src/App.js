@@ -67,7 +67,7 @@ function App() {
     <div className="App">
       <div className="starsDiv">
         {
-          starsState
+          // starsState
         }
       </div>
       <Home allRefs={pageRefs} scrollToPage={scrollToPage} />

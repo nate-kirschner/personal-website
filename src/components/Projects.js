@@ -30,7 +30,7 @@ const cards = (cardClickedFunction, selected) => {
         <div className="cards">
             <ProjectCard
                 title="Best Ball Majors"
-                description={<p className="cardDescription">A fantasy golf website hosted on AWS and made with ReactJS/<div className="red">NodeJS</div></p>}
+                description={<p className="cardDescription">A fantasy golf website hosted on AWS and made with ReactJS/NodeJS</p>}
                 cardClickedFunction={cardClickedFunction}
                 selected={selected}
             />
@@ -42,7 +42,7 @@ const cards = (cardClickedFunction, selected) => {
             />
             <ProjectCard
                 title="The Other Half's News"
-                description={<p className="cardDescription">A <div className="red">ReactJS</div> news aggregator which sorts articles by political bias.</p>}
+                description={<p className="cardDescription">A ReactJS news aggregator which sorts articles by political bias.</p>}
                 cardClickedFunction={cardClickedFunction}
                 selected={selected}
             />
