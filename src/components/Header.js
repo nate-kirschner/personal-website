@@ -1,5 +1,5 @@
 import "../styles/header.scss";
-import React, { useState, useRef } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { polyfill } from "seamless-scroll-polyfill";
 
 export default function Header({ title, clicked, allRefs, scrollToPage }) {
