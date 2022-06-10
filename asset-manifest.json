@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.4c41b9be.css",
-    "main.js": "/static/js/main.03fe1d2a.js",
+    "main.css": "/static/css/main.8df9c8bf.css",
+    "main.js": "/static/js/main.c84a59ea.js",
     "static/js/787.e1b1c231.chunk.js": "/static/js/787.e1b1c231.chunk.js",
     "static/media/ImageProcessSharpen.png": "/static/media/ImageProcessSharpen.1fe296cc6b474694b103.png",
     "static/media/TOHNews.png": "/static/media/TOHNews.b37fcfeade27ba1c291f.png",
@@ -11,21 +11,21 @@
     "static/media/ImageProcessSepia.png": "/static/media/ImageProcessSepia.b54c29dab0d794cf5a3a.png",
     "static/media/ImageProcessBlur.png": "/static/media/ImageProcessBlur.168ac973b7d0a0a12d1c.png",
     "static/media/ImageProcessGrayscale.png": "/static/media/ImageProcessGrayscale.4557ef05bcd11380a35a.png",
-    "static/media/bestBallHome.png": "/static/media/bestBallHome.9acf1b70f5cd6ff3574c.png",
-    "static/media/bestBallLeaderboard.png": "/static/media/bestBallLeaderboard.e87396ddcc28d0e3a8bb.png",
     "static/media/ImageProcessMosaic.png": "/static/media/ImageProcessMosaic.fef53339b8f436806a5c.png",
     "static/media/ImageProcessorAddLayer.png": "/static/media/ImageProcessorAddLayer.d19ed9594ee2098abd6e.png",
-    "static/media/bestBallRoster.png": "/static/media/bestBallRoster.921ef4711508d5e81eb5.png",
-    "static/media/bestBallLeagues.png": "/static/media/bestBallLeagues.2470407ace5d3a62783a.png",
     "static/media/Resume.pdf": "/static/media/Resume.245644f3f098709373c3.pdf",
+    "static/media/bbm-leaderboard.png": "/static/media/bbm-leaderboard.e41cf0708406b5c54fd3.png",
+    "static/media/bbm-home.png": "/static/media/bbm-home.941c2e3b10a97ed551c5.png",
     "static/media/profile-pic.jpg": "/static/media/profile-pic.f4fc9b618e129d0364a4.jpg",
+    "static/media/bbm-leagues.png": "/static/media/bbm-leagues.1c8dd3cd09fb2197b8d4.png",
+    "static/media/bbm-roster.png": "/static/media/bbm-roster.2c5ab83cab7585e593e4.png",
     "index.html": "/index.html",
-    "main.4c41b9be.css.map": "/static/css/main.4c41b9be.css.map",
-    "main.03fe1d2a.js.map": "/static/js/main.03fe1d2a.js.map",
+    "main.8df9c8bf.css.map": "/static/css/main.8df9c8bf.css.map",
+    "main.c84a59ea.js.map": "/static/js/main.c84a59ea.js.map",
     "787.e1b1c231.chunk.js.map": "/static/js/787.e1b1c231.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4c41b9be.css",
-    "static/js/main.03fe1d2a.js"
+    "static/css/main.8df9c8bf.css",
+    "static/js/main.c84a59ea.js"
   ]
 }
