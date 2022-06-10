@@ -20,7 +20,7 @@ export default function Header({ title, clicked, allRefs, scrollToPage }) {
             headerRef.current.style.position = "sticky";
         } else {
             headerRef.current.style.position = "relative";
-            // headerRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+            headerRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
             document.body.style.overflow = "hidden";
         }
 
