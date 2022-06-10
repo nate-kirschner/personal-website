@@ -5,7 +5,6 @@ import Projects from "./components/Projects";
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 import { useRef, useEffect } from 'react';
-import { polyfill } from "seamless-scroll-polyfill";
 
 function App() {
 
@@ -16,10 +15,6 @@ function App() {
     "Experience": useRef(null),
     "Contact": useRef(null)
   }
-
-  useEffect(() => {
-    polyfill();
-  }, [])
 
   const scrollToPage = (ref) => {
     ref.current.scrollIntoView({ behavior: "smooth", block: "start" });

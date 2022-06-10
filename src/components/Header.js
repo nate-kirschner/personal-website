@@ -1,6 +1,5 @@
 import "../styles/header.scss";
-import React, { useEffect, useState, useRef } from 'react';
-import { polyfill } from "seamless-scroll-polyfill";
+import React, { useState, useRef } from 'react';
 
 export default function Header({ title, clicked, allRefs, scrollToPage }) {
 
@@ -10,20 +9,15 @@ export default function Header({ title, clicked, allRefs, scrollToPage }) {
     const headerRef = useRef(null);
     const titleRef = useRef(null);
 
-    useEffect(() => {
-        polyfill();
-      }, [])
-
     const clickHeader = () => {
         if (blur) {
             document.body.style.overflow = "auto";
             headerRef.current.style.position = "sticky";
         } else {
             headerRef.current.style.position = "relative";
-            document.querySelector("body").scrollTo({
-                top: headerRef.current.offsetTop,
-                behavior: 'smooth',
-            });
+
+            scrollToSmoothly(headerRef.current.offsetTop, 300);
+
             document.body.style.overflow = "hidden";
         }
 
@@ -112,4 +106,27 @@ export default function Header({ title, clicked, allRefs, scrollToPage }) {
 
         </div>
     )
+}
+
+function scrollToSmoothly(pos, time) {
+    var currentPos = window.pageYOffset;
+    console.log(pos)
+    console.log(currentPos)
+    var start = null;
+    pos = +pos;
+    time = +time;
+    window.requestAnimationFrame(function step(currentTime) {
+        start = !start ? currentTime : start;
+        var progress = currentTime - start;
+        if (currentPos < pos) {
+            window.scrollTo(0, ((pos - currentPos) * progress / time) + currentPos);
+        } else {
+            window.scrollTo(0, currentPos - ((currentPos - pos) * progress / time));
+        }
+        if (progress < time) {
+            window.requestAnimationFrame(step);
+        } else {
+            window.scrollTo(0, pos);
+        }
+    });
 }
