@@ -34,21 +34,23 @@ export default function AboutMe({headerClicked, allRefs, scrollToPage}) {
                     
                     <div className="textWrapper school">
                         <p>
-                            Currently, I'm a computer science undergraduate student at Northeastern University with a minor in business administration on track to graduate in May 2024. Within the computer science major, my concentration is software, and I'm interested in working as a software or web developer.
+                            I'm a computer science undergraduate student at Northeastern University with a minor in business administration on track to graduate in May 2024. Within the computer science major, my concentration is software, and I'm interested in working as a software or web developer.
                         </p>
                     </div>
                     
                     <div className="textWrapper work">
                         <p>
-                            For my first Co-op, I'm gaining experience as a software developer at PowerAdvocate where I'm on the workflow team helping to improve their software.
+                            For my first six month co-op, I've worked as software developer at PowerAdvocate doing full stack web development.
                             <br/>
-                            My prior experience includes working as a teaching assistant for the Object Oriented Design class at Northeastern. In addition, I’ve also developed a number of personal projects you can find in the projects section.    
+                            My prior experience includes working as a teaching assistant for the Object Oriented Design class at Northeastern. In addition, I’ve  developed a number of personal projects which you can find in the projects section.    
                         </p>
                     </div> 
                     
                     <div className="textWrapper resume">
                         <p>
-                            <a className="resumeLink" href={resume} target="_blank" rel="noreferrer">Check out my resume!</a>
+                            <a className="resumeLink" href={resume} target="_blank" rel="noreferrer">
+                                Feel free to check out my resume!
+                            </a>
                         </p>
                     </div>
             </div>

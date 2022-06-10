@@ -1,8 +1,8 @@
 import "../styles/projectCard.scss";
-import bestBallHome from "../images/bestBall/bestBallHome.png";
-import bestBallRoster from "../images/bestBall/bestBallRoster.png";
-import bestBallLeaderboard from "../images/bestBall/bestBallLeaderboard.png";
-import bestBallLeagues from "../images/bestBall/bestBallLeagues.png";
+import bestBallHome from "../images/bestBall/bbm-home.png";
+import bestBallRoster from "../images/bestBall/bbm-roster.png";
+import bestBallLeaderboard from "../images/bestBall/bbm-leaderboard.png";
+import bestBallLeagues from "../images/bestBall/bbm-leagues.png";
 
 import imageProcessAddLayer from "../images/imageEditor/ImageProcessorAddLayer.png";
 import imageProcessImport from "../images/imageEditor/ImageProcessImport.png";
@@ -24,6 +24,8 @@ export default function ProjectCard({ title, description, cardClickedFunction, s
         // }, 400);
     }
 
+    const viewInTabIcon = <img className="viewInNewTabIcon" alt="View in new tab icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAqklEQVRIie2Quw0CMRBEx4gWOJFcP1RyEpSLA3KukEdiEDL+7Nkmgsls7cybXemvLQJOwEpBb7PVGUlyEeAuaS6VcM65J6A2k9rgo0FNwAG45jboAgAT4IPNDwVEzW/AcRggFW7yWwC58CGAUrhJJUB3eAlgDW860ZbmrYBL+PbAlDW3AsL/uRbeBbAq5d+1hln1dcA+eq+S5p4zhYyX4g2WeKAhfOnw/6IeM2CpfvHVCrkAAAAASUVORK5CYII="></img>
+
     return (
         <>
             {/* <div className="scrolled" id={selected === title ? "selected" : "not-selected"} ref={myRef} /> */}
@@ -40,7 +42,14 @@ export default function ProjectCard({ title, description, cardClickedFunction, s
                 {
                     title === "The Other Half's News" && (
                         <a href="https://tohnews.com" target="_blank" rel="noreferrer">
-                            <img className="viewInNewTabIcon" alt="View in new tab icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAqklEQVRIie2Quw0CMRBEx4gWOJFcP1RyEpSLA3KukEdiEDL+7Nkmgsls7cybXemvLQJOwEpBb7PVGUlyEeAuaS6VcM65J6A2k9rgo0FNwAG45jboAgAT4IPNDwVEzW/AcRggFW7yWwC58CGAUrhJJUB3eAlgDW860ZbmrYBL+PbAlDW3AsL/uRbeBbAq5d+1hln1dcA+eq+S5p4zhYyX4g2WeKAhfOnw/6IeM2CpfvHVCrkAAAAASUVORK5CYII="></img>
+                            {viewInTabIcon}
+                        </a>
+                    )
+                }
+                {
+                    title === "Best Ball Majors" && (
+                        <a href="https://bestballmajors.com" target="_blank" rel="noreferrer">
+                            {viewInTabIcon}
                         </a>
                     )
                 }
@@ -106,6 +115,9 @@ const projectSlides = {
                 calculate the total.
             </p>
         </div>
+    ],
+    "PseudoNote": [
+
     ],
     "Image Editor": [
         <div className="projectContent" key={6}>

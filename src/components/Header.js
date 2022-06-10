@@ -1,5 +1,6 @@
 import "../styles/header.scss";
 import React, { useState, useRef } from 'react';
+import { polyfill } from "seamless-scroll-polyfill";
 
 export default function Header({ title, clicked, allRefs, scrollToPage }) {
 
@@ -9,14 +10,17 @@ export default function Header({ title, clicked, allRefs, scrollToPage }) {
     const headerRef = useRef(null);
     const titleRef = useRef(null);
 
+    useEffect(() => {
+        polyfill();
+      }, [])
+
     const clickHeader = () => {
-        console.log("header clicked")
         if (blur) {
             document.body.style.overflow = "auto";
             headerRef.current.style.position = "sticky";
         } else {
             headerRef.current.style.position = "relative";
-            headerRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+            // headerRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
             document.body.style.overflow = "hidden";
         }
 
@@ -25,7 +29,6 @@ export default function Header({ title, clicked, allRefs, scrollToPage }) {
     }
 
     const clickMenu = (title) => {
-        console.log("menu clicked")
         clickHeader();
         setTimeout(() => scrollToPage(allRefs[title]), 1);
     }
