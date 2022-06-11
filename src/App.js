@@ -40,6 +40,9 @@ function App() {
       <Projects headerClicked={headerClicked} allRefs={pageRefs} scrollToPage={scrollToPage} />
       <Experience headerClicked={headerClicked} allRefs={pageRefs} scrollToPage={scrollToPage} />
       <Contact headerClicked={headerClicked} allRefs={pageRefs} scrollToPage={scrollToPage} />
+      <div className="iconsSource">
+          <a href="https://icons8.com" target="_blank" rel="noreferrer">Icons by Icons8</a>
+      </div>
     </div>
   );
 }

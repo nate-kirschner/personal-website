@@ -26,6 +26,7 @@
         .experienceBlock {
             width: 65vw;
             transition: width .4s;
+            box-shadow: 5px 5px 5px 5px black;
         }
     }
 
@@ -105,6 +106,12 @@
     transition: width .4s;
     display: flex;
     flex-direction: column;
+    background-color: rgba(44, 32, 255, .1);
+
+    &:hover {
+        box-shadow: 5px 5px 5px 5px black;
+        cursor: pointer;
+    }
 
     @include tablet {
         width: 90%;

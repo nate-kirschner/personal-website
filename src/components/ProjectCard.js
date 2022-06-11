@@ -16,49 +16,43 @@ import imageProcessMosaic from "../images/imageEditor/ImageProcessMosaic.png";
 
 import tohNews from "../images/TOHNews.png";
 
-export default function ProjectCard({ title, description, cardClickedFunction, selected }) {
-
-    const executeScroll = () => {
-        // setTimeout(() => {
-        //     myRef.current.scrollIntoView({ behavior: "smooth", block: "start" })
-        // }, 400);
-    }
+export default function ProjectCard({ title, description, cardClickedFunction, selected, icons }) {
 
     const viewInTabIcon = <img className="viewInNewTabIcon" alt="View in new tab icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAqklEQVRIie2Quw0CMRBEx4gWOJFcP1RyEpSLA3KukEdiEDL+7Nkmgsls7cybXemvLQJOwEpBb7PVGUlyEeAuaS6VcM65J6A2k9rgo0FNwAG45jboAgAT4IPNDwVEzW/AcRggFW7yWwC58CGAUrhJJUB3eAlgDW860ZbmrYBL+PbAlDW3AsL/uRbeBbAq5d+1hln1dcA+eq+S5p4zhYyX4g2WeKAhfOnw/6IeM2CpfvHVCrkAAAAASUVORK5CYII="></img>
 
     return (
-        <>
-            {/* <div className="scrolled" id={selected === title ? "selected" : "not-selected"} ref={myRef} /> */}
-            <div
-                className="projectCard"
-                onClick={() => {
-                    cardClickedFunction(title);
-                    executeScroll();
-                }}
-                id={selected === title ? "selected" : "not-selected"}
-            >
-                {/* <div className="scroll" /> */}
-                <h3 className="cardTitle">{title}</h3>
+        <div
+            className="projectCard"
+            onClick={() => cardClickedFunction(title)}
+            id={selected === title ? "selected" : "not-selected"}
+        >
+            <h3 className="cardTitle">{title}</h3>
+            {
+                title === "The Other Half's News" && (
+                    <a href="https://tohnews.com" target="_blank" rel="noreferrer">
+                        {viewInTabIcon}
+                    </a>
+                )
+            }
+            {
+                title === "Best Ball Majors" && (
+                    <a href="https://bestballmajors.com" target="_blank" rel="noreferrer">
+                        {viewInTabIcon}
+                    </a>
+                )
+            }
+            {description}
+            {
+                selected === title && projectSlides[title]
+            }
+            <div className="skillIcons">
                 {
-                    title === "The Other Half's News" && (
-                        <a href="https://tohnews.com" target="_blank" rel="noreferrer">
-                            {viewInTabIcon}
-                        </a>
-                    )
-                }
-                {
-                    title === "Best Ball Majors" && (
-                        <a href="https://bestballmajors.com" target="_blank" rel="noreferrer">
-                            {viewInTabIcon}
-                        </a>
-                    )
-                }
-                {description}
-                {
-                    selected === title && projectSlides[title]
+                    icons.map(icon => {
+                        return <img className="skillIcon" src={icon} />
+                    })
                 }
             </div>
-        </>
+        </div>
     )
 }
 
@@ -213,9 +207,6 @@ const projectSlides = {
             </p>
             <img className="projectImage tohNewsImage" src={tohNews}
                 alt="TOH News Page" />
-            <div className="iconsSource">
-                <a href="https://icons8.com/icon/82787/external-link">External Link icon by Icons8</a>
-            </div>
         </div>
     ],
     "Recommendr": [
