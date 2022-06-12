@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.ea9caaf8.css",
+    "main.css": "/static/css/main.5de2a49d.css",
     "main.js": "/static/js/main.6aa7be21.js",
     "static/js/787.e1b1c231.chunk.js": "/static/js/787.e1b1c231.chunk.js",
     "static/media/ImageProcessSharpen.png": "/static/media/ImageProcessSharpen.1fe296cc6b474694b103.png",
@@ -20,12 +20,12 @@
     "static/media/bbm-leagues.png": "/static/media/bbm-leagues.1c8dd3cd09fb2197b8d4.png",
     "static/media/bbm-roster.png": "/static/media/bbm-roster.2c5ab83cab7585e593e4.png",
     "index.html": "/index.html",
-    "main.ea9caaf8.css.map": "/static/css/main.ea9caaf8.css.map",
+    "main.5de2a49d.css.map": "/static/css/main.5de2a49d.css.map",
     "main.6aa7be21.js.map": "/static/js/main.6aa7be21.js.map",
     "787.e1b1c231.chunk.js.map": "/static/js/787.e1b1c231.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ea9caaf8.css",
+    "static/css/main.5de2a49d.css",
     "static/js/main.6aa7be21.js"
   ]
 }
