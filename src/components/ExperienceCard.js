@@ -71,10 +71,11 @@ const experienceText = {
     "NEU Virtual Reality Club Member": (
         <div className="experienceText">
             <p className="experienceBlockText">
-                As part of the Software Development team, I worked on a virtual reality,
+                As part of the Software Development team, I worked on an augmented reality,
                 Boston-based scavenger hunt app during the Fall
-                Semester of 2020. We met weekly to design and develop the app. The app
-                is not yet finished, but should be ready soon.
+                Semester of 2020. We met weekly to design and develop the app.
+                <br />
+                More recently, the team has been working on a virtual reality escape room. 
                 <br /><br />
                 Through this experience, I gained a
                 working knowledge of Unity and C#. I also became more comfortable
@@ -93,25 +94,30 @@ const experienceText = {
                 in the U.S. I collected the business information of about 15,000 HVAC
                 companies and provided it in an excel sheet.
                 <br /><br />
-                In doing this, I became more familiar with Python, a language I've used
-                in a few classes so far, and Selenium, a web automation tool.
+                In doing this, I became more familiar with Python, and Selenium, a web automation tool.
             </p>
         </div>
     ),
     "Object Oriented Design Teaching Assistant": (
         <div className="experienceText">
             <p className="experienceBlockText">
-                As a teaching assistant, my responsibilities include holding office
-                hours, teaching and assisting in labs, and grading assignments. By
-                teaching other students the material for this Object Oriented Deisgn
-                class, I have reinforced the material for myself and gained a better understanding of Object-Oriented principles.
+                As a teaching assistant, I was able to reinforce the concepts that I had learned in the class the first time around, and improve on my leadership and communication skills.
+                <br /><br />
+                I held 5 office hours per week, where I would answer student's questions and explain concepts taught in class. I also lead two labs per week, where I guided students through a problem set and served as a resource to them as they worked. My final responsibility included grading assignments and exams.
             </p>
         </div>
     ),
     "PowerAdvocate Software Developer Coop": (
         <div className="experienceText">
             <p className="experienceBlockText">
-                This is my current co-op position which will end in July 2022. I am working on the Workflow team at PowerAdvocate. Through this experience I have gained a better understanding of their tech stack, which includes ReactJS, NodeJS, and a number of databases and other technologies. 
+                During this six month co-op, I worked as a full stack web developer using ReactJS, NodeJS, and Spring Boot, among other technologies. I utilized AWS tools such as Lambdas, Step Functions, CloudWatch, and EC2.
+                <br /><br />
+                My responsibilities included picking up stories off of the backlog and completing them in a timely fashion. I got the opportunity to work both independently and pair programming.
+                In addition, I was also involved in the recruitment process of future co-ops, doing interviews and planning onboarding workshops and lectures.
+                <br /><br />
+                For the first three months of my coop, I was on a team of four developers integrating a new feature into the website. This allowed me to become familiar with a large, existing code base in order to make the additions, as well as giving me the experience to create new pages from scratch when necessary.
+                <br /><br />
+                The second half of the coop was spent on a larger team developing a new dataset for clients. I helped develope a new data pipeline and became familiar with AWS tools such as Step Functions and Lambdas. Once the pipeline work was complete, I went back to web development, creating data panels to display the new dataset and integrating it in the website.
             </p>
         </div>
     )

@@ -62,13 +62,13 @@ const cards = (cardClickedFunction, selected) => {
                 selected={selected}
                 icons={[htmlIcon, reactIcon, cssIcon]}
             />
-            <ProjectCard
+            {/* <ProjectCard
                 title="Recommendr"
                 description={<p className="cardDescription">A website for sharing movies/tv shows/books/etc. with friends.</p>}
                 cardClickedFunction={cardClickedFunction}
                 selected={selected}
                 icons={[htmlIcon, nodeIcon, reactIcon, mysqlIcon, cssIcon]}
-            />
+            /> */}
         </div>
     )
 }

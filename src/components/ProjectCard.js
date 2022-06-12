@@ -16,6 +16,9 @@ import imageProcessMosaic from "../images/imageEditor/ImageProcessMosaic.png";
 
 import tohNews from "../images/TOHNews.png";
 
+import pseudonotetext from '../images/pseudonote/pseudonotetext.jpeg';
+import pseudonotecode from '../images/pseudonote/pseudonotecode.jpeg';
+
 import { useEffect, useState, useRef } from 'react';
 
 export default function ProjectCard({ title, description, cardClickedFunction, selected, icons }) {
@@ -71,6 +74,13 @@ export default function ProjectCard({ title, description, cardClickedFunction, s
             {
                 title === "Best Ball Majors" && (
                     <a href="https://bestballmajors.com" target="_blank" rel="noreferrer">
+                        {viewInTabIcon}
+                    </a>
+                )
+            }
+            {
+                title === "PseudoNote" && (
+                    <a href="https://devpost.com/software/pseudonote-q56bih" target="_blank" rel="noreferrer">
                         {viewInTabIcon}
                     </a>
                 )
@@ -145,7 +155,22 @@ const projectSlides = {
         </div>
     ],
     "PseudoNote": [
-
+        <div className="projectContent" key={14}>
+            <p className="projectText">
+                I built this hackathon project with a partner over the course of 48 hours. We were tired of taking notes for computer science classes with text editors that couldn't format code correctly. Our site allows users to switch between code and text formatting, and download and upload files.
+            </p>
+        </div>,
+        <div className="projectContent" key={15}>
+            <p className="projectText">
+                We used ReactJs to make the website and it is currently hosted on Github pages <a href="https://nate-kirschner.github.io/PseudoNote/">here</a>.
+            </p>
+        </div>,
+        <div className="projectContent">
+            <img className="projectImage" src={pseudonotetext}
+                alt="PseudoNote Text View" />
+            <img className="projectImage" src={pseudonotecode}
+                alt="PseudoNote Code View" />
+        </div>
     ],
     "Image Editor": [
         <div className="projectContent" key={6}>
@@ -218,10 +243,6 @@ const projectSlides = {
                         alt="Editor Project Grayscale" />
                     <img className="projectImage" src={imageProcessSepia}
                         alt="Editor Project Sepia" />
-                    {/* <img className="projectImage" src={imageProcessBlur}
-                        alt="Editor Project Blur" />
-                    <img className="projectImage" src={imageProcessSharpen}
-                        alt="Editor Project Sharpen" /> */}
                 </div>
             </div>
         </div>
@@ -246,7 +267,7 @@ const projectSlides = {
     "Recommendr": [
         <div className="projectContent" key={13}>
             <p className="projectText">
-                
+                Worked with a partner to make a website 
             </p>
         </div>
     ]
