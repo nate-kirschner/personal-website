@@ -36,7 +36,7 @@
     border-radius: 50%;
     display: inline-block;
     z-index: 1;
-    box-shadow: 0 0 0 7px white;
+    box-shadow: 0 0 0 4px white;
 
     @include largePhones {
         width: 70px;
@@ -51,6 +51,7 @@
     @include laptop {
         width: 100px;
         height: 100px;
+        box-shadow: 0 0 0 7px white;
     }
 
     @include desktop {
@@ -229,3 +230,21 @@
     }
 }
 
+.inView, #inView {
+    visibility: visible;
+    animation: visible 1s;
+}
+
+.outView, #outView {
+    visibility: none;
+    opacity: 0;
+}
+
+@keyframes visible {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+   }

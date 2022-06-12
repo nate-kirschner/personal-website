@@ -1,6 +1,6 @@
 import "../styles/projects.scss";
 import ProjectCard from "./ProjectCard";
-import { useState } from 'react';
+import { useState, } from 'react';
 import Header from "./Header";
 
 import cssIcon from '../images/skillsIcons/cssIcon.png';

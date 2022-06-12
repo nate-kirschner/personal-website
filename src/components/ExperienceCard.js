@@ -1,38 +1,61 @@
 import "../styles/experienceCard.scss";
+import { useEffect, useState, useRef } from 'react';
 
 export default function ExperienceCard({ titleDiv, title, date, num, onClick, active }) {
 
-    const executeScroll = () => {
-        // setTimeout(() => myRef.current.scrollIntoView({ behavior: "smooth", block: "start" }), 400);
+    const [isVisible, setIsVisible] = useState(false);
+    const fadeInRef = useRef();
+
+    const callbackFunc = (entries) => {
+        const [ entry ] = entries;
+        if (!isVisible) {
+            setIsVisible(entry.isIntersecting);
+        }
     }
+
+    const options = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 1
+    }
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(callbackFunc, options);
+        const refCurrent = fadeInRef.current;
+        if (refCurrent) {
+            observer.observe(refCurrent);
+        }
+        
+        return () => {
+            if (refCurrent) {
+                observer.unobserve(refCurrent);
+            }
+        }
+
+    }, [fadeInRef, options])
 
     const chooseSide = () => {
         return num % 2 === 0 ? "left" : "right";
     }
 
     return (
-        <>
-            {/* <div className="expScroll" ref={myRef} style={{ gridRow: `${num} / ${num}`}}/> */}
-            <div
-                className={"experienceCard " + chooseSide()}
-                style={{ gridRowStart: `${num}` }}
-                onClick={() => {
-                    onClick(title, chooseSide());
-                    executeScroll();
-                }}
-                id={active === title ? "active" : "non-active"}
-            >
+        <div
+            className={"experienceCard " + chooseSide() + (isVisible ? " inView" : " outView")}
+            style={{ gridRowStart: `${num}` }}
+            onClick={() => onClick(title, chooseSide())}
+            id={active === title ? "active" : "non-active"}
+            ref={fadeInRef}
+        >
 
-                <div className="horizontalBar" />
-                <div className="experienceBlock">
-                    {titleDiv}
-                    <p className="date">{date}</p>
-                    {
-                        active === title && experienceText[title]
-                    }
-                </div>
+            <div className="horizontalBar" />
+            <div className="experienceBlock">
+                {titleDiv}
+                <p className="date">{date}</p>
+                {
+                    active === title && experienceText[title]
+                }
             </div>
-        </>
+        </div>
     )
 }
 

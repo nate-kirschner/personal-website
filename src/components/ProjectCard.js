@@ -16,15 +16,49 @@ import imageProcessMosaic from "../images/imageEditor/ImageProcessMosaic.png";
 
 import tohNews from "../images/TOHNews.png";
 
+import { useEffect, useState, useRef } from 'react';
+
 export default function ProjectCard({ title, description, cardClickedFunction, selected, icons }) {
 
     const viewInTabIcon = <img className="viewInNewTabIcon" alt="View in new tab icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAqklEQVRIie2Quw0CMRBEx4gWOJFcP1RyEpSLA3KukEdiEDL+7Nkmgsls7cybXemvLQJOwEpBb7PVGUlyEeAuaS6VcM65J6A2k9rgo0FNwAG45jboAgAT4IPNDwVEzW/AcRggFW7yWwC58CGAUrhJJUB3eAlgDW860ZbmrYBL+PbAlDW3AsL/uRbeBbAq5d+1hln1dcA+eq+S5p4zhYyX4g2WeKAhfOnw/6IeM2CpfvHVCrkAAAAASUVORK5CYII="></img>
 
+    const [isVisible, setIsVisible] = useState(false);
+    const fadeInRef = useRef();
+
+    const callbackFunc = (entries) => {
+        const [ entry ] = entries;
+        if (!isVisible) {
+            setIsVisible(entry.isIntersecting);
+        }
+    }
+
+    const options = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 1
+    }
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(callbackFunc, options);
+        const refCurrent = fadeInRef.current;
+        if (refCurrent) {
+            observer.observe(refCurrent);
+        }
+        
+        return () => {
+            if (refCurrent) {
+                observer.unobserve(refCurrent);
+            }
+        }
+
+    }, [fadeInRef, options])
+
     return (
         <div
-            className="projectCard"
+            className={"projectCard " + (isVisible ? "inView" : "outView")}
             onClick={() => cardClickedFunction(title)}
             id={selected === title ? "selected" : "not-selected"}
+            ref={fadeInRef}
         >
             <h3 className="cardTitle">{title}</h3>
             {
@@ -48,7 +82,7 @@ export default function ProjectCard({ title, description, cardClickedFunction, s
             <div className="skillIcons">
                 {
                     icons.map(icon => {
-                        return <img className="skillIcon" src={icon} />
+                        return <img className="skillIcon" src={icon} alt="icon for the tool used in this project" />
                     })
                 }
             </div>

@@ -4,7 +4,7 @@ import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
-import { useRef, useEffect } from 'react';
+import { useRef } from 'react';
 
 function App() {
 
