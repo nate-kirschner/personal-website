@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.fcd097ae.css",
-    "main.js": "/static/js/main.21af7af4.js",
+    "main.css": "/static/css/main.ea9caaf8.css",
+    "main.js": "/static/js/main.6aa7be21.js",
     "static/js/787.e1b1c231.chunk.js": "/static/js/787.e1b1c231.chunk.js",
     "static/media/ImageProcessSharpen.png": "/static/media/ImageProcessSharpen.1fe296cc6b474694b103.png",
     "static/media/TOHNews.png": "/static/media/TOHNews.b37fcfeade27ba1c291f.png",
@@ -20,12 +20,12 @@
     "static/media/bbm-leagues.png": "/static/media/bbm-leagues.1c8dd3cd09fb2197b8d4.png",
     "static/media/bbm-roster.png": "/static/media/bbm-roster.2c5ab83cab7585e593e4.png",
     "index.html": "/index.html",
-    "main.fcd097ae.css.map": "/static/css/main.fcd097ae.css.map",
-    "main.21af7af4.js.map": "/static/js/main.21af7af4.js.map",
+    "main.ea9caaf8.css.map": "/static/css/main.ea9caaf8.css.map",
+    "main.6aa7be21.js.map": "/static/js/main.6aa7be21.js.map",
     "787.e1b1c231.chunk.js.map": "/static/js/787.e1b1c231.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fcd097ae.css",
-    "static/js/main.21af7af4.js"
+    "static/css/main.ea9caaf8.css",
+    "static/js/main.6aa7be21.js"
   ]
 }
