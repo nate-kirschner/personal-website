@@ -23,7 +23,15 @@
 
     @include desktop {
         grid-template-columns: 25% 75%;
-        row-gap: 10px;
+        row-gap: 3em;
+    }
+
+    @include largeDesktop {
+        row-gap: 4em;
+    }
+
+    @include wideScreen {
+        row-gap: 5em;
     }
 }
 
@@ -106,11 +114,11 @@
 }
 
 .iconWrapper {
-    padding: 1em 0;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-grow: 1;
 
     img {
         align-self: center;
@@ -168,8 +176,8 @@
     height: 100%;
     display: flex;
     align-items: center;
-    // justify-content: center;
     text-align: left;
+    flex-grow: 1;
 
     p {
         align-self: center;

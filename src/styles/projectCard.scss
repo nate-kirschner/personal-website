@@ -2,14 +2,10 @@
 
 .projectCard {
     border: 1px solid white;
-    width: 50%;
+    width: 90%;
     margin: 50px auto;
     border-radius: 25px;
     overflow-x: hidden;
-    // box-shadow: 5px 5px 15px 5px black;
-    // height: 20vh;
-    // min-height: 20vh;
-    // transition: min-height .4s;
     cursor: pointer;
     position: relative;
 
@@ -20,6 +16,19 @@
     z-index: 0;
 
     background-color: rgba(44, 32, 255, .1);
+
+    @include tablet {
+        width: 70%;
+    }
+
+    @include laptop {
+        width: 60%;
+    }
+
+    @include desktop {
+        width: 50%;
+    }
+
 }
 
 .scrolled#selected {
