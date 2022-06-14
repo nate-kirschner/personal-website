@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.055fcfff.css",
-    "main.js": "/static/js/main.8675ce8c.js",
+    "main.js": "/static/js/main.8b809ac8.js",
     "static/js/787.e1b1c231.chunk.js": "/static/js/787.e1b1c231.chunk.js",
     "static/media/ImageProcessSharpen.png": "/static/media/ImageProcessSharpen.1fe296cc6b474694b103.png",
     "static/media/TOHNews.png": "/static/media/TOHNews.b37fcfeade27ba1c291f.png",
@@ -23,11 +23,11 @@
     "static/media/pseudonotetext.jpeg": "/static/media/pseudonotetext.dd112a06bd74c94f1742.jpeg",
     "index.html": "/index.html",
     "main.055fcfff.css.map": "/static/css/main.055fcfff.css.map",
-    "main.8675ce8c.js.map": "/static/js/main.8675ce8c.js.map",
+    "main.8b809ac8.js.map": "/static/js/main.8b809ac8.js.map",
     "787.e1b1c231.chunk.js.map": "/static/js/787.e1b1c231.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.055fcfff.css",
-    "static/js/main.8675ce8c.js"
+    "static/js/main.8b809ac8.js"
   ]
 }
