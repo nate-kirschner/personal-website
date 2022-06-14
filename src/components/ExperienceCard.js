@@ -94,7 +94,7 @@ const experienceText = {
                 in the U.S. I collected the business information of about 15,000 HVAC
                 companies and provided it in an excel sheet.
                 <br /><br />
-                In doing this, I became more familiar with Python, and Selenium, a web automation tool.
+                In doing this, I became more familiar with Python and Selenium, a web automation tool.
             </p>
         </div>
     ),
@@ -112,12 +112,12 @@ const experienceText = {
             <p className="experienceBlockText">
                 During this six month co-op, I worked as a full stack web developer using ReactJS, NodeJS, and Spring Boot, among other technologies. I utilized AWS tools such as Lambdas, Step Functions, CloudWatch, and EC2.
                 <br /><br />
-                My responsibilities included picking up stories off of the backlog and completing them in a timely fashion. I got the opportunity to work both independently and pair programming.
+                My responsibilities included picking up stories off of the backlog and completing them in a timely fashion. I got the opportunity to work both independently and through pair programming.
                 In addition, I was also involved in the recruitment process of future co-ops, doing interviews and planning onboarding workshops and lectures.
                 <br /><br />
                 For the first three months of my coop, I was on a team of four developers integrating a new feature into the website. This allowed me to become familiar with a large, existing code base in order to make the additions, as well as giving me the experience to create new pages from scratch when necessary.
                 <br /><br />
-                The second half of the coop was spent on a larger team developing a new dataset for clients. I helped develope a new data pipeline and became familiar with AWS tools such as Step Functions and Lambdas. Once the pipeline work was complete, I went back to web development, creating data panels to display the new dataset and integrating it in the website.
+                The second half of the coop was spent on a larger team developing a new dataset for clients. I helped develop a new data pipeline and became familiar with AWS tools such as Step Functions and Lambdas. Once the pipeline work was complete, I went back to web development, creating data panels to display the new dataset and integrating it in the website.
             </p>
         </div>
     )

@@ -125,8 +125,7 @@ const projectSlides = {
             <img className="projectImage" src={bestBallLeagues}
                 alt="Best Ball Project Create League" />
             <p className="projectText">
-                After navigating to the Contests
-                tab and then the Leagues tab, there
+                After navigating to Leagues page, there
                 is the option to create or join a league. This allows users to play
                 in
                 tournaments specifically with their friends.
@@ -138,7 +137,7 @@ const projectSlides = {
                 alt="Best Ball Project Leaderboard" />
             <p className="projectText">
                 The leaderboard page above shows a
-                leaderboard all users on the website.
+                leaderboard with all users on the website.
             </p>
         </div>,
 
@@ -148,7 +147,7 @@ const projectSlides = {
             <p className="projectText">
                 This is an example of a roster.
                 Users have the option to choose four
-                players for their roster and the best score from each hole is used
+                players for their roster each week and the best score from each hole is used
                 to
                 calculate the total.
             </p>
@@ -162,7 +161,7 @@ const projectSlides = {
         </div>,
         <div className="projectContent" key={15}>
             <p className="projectText">
-                We used ReactJs to make the website and it is currently hosted on Github pages <a href="https://nate-kirschner.github.io/PseudoNote/">here</a>.
+                We used ReactJs to make the website and it is currently hosted on Github pages <a href="https://nate-kirschner.github.io/PseudoNote/" target="_blank" rel="noreferrer">here</a>.
             </p>
         </div>,
         <div className="projectContent">
@@ -175,7 +174,7 @@ const projectSlides = {
     "Image Editor": [
         <div className="projectContent" key={6}>
             <p className="projectText">
-                In this class assignment I worked with a partner to create a Java application capable of performing multiple image processing operations. 
+                In this Object Oriented Design class assignment I worked with a partner to create a Java application capable of performing multiple image processing operations. 
                 We used the Model, View,
                 Controller
                 pattern and the GUI was made with Java Swing.
