@@ -103,7 +103,7 @@
 .projectCard#selected {
     height: 80vh;
     transition: height .4s;
-    overflow-y: scroll;
+    overflow-y: auto;
     overflow-x: hidden;
     box-shadow: 5px 5px 5px 5px black;
 
