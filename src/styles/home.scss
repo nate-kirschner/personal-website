@@ -10,13 +10,10 @@
     overflow-y: hidden;
 
     @include tablet {
-        grid-template-columns: 55% 45%;
-        grid-template-rows: 25% 5% max-content 1fr;
-    }
-    
-    @include laptop {
-        grid-template-columns: 60% 40%;
-        grid-template-rows: 15% 5% max-content 1fr;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
     }
 }
 
@@ -28,9 +25,14 @@
 
     @include tablet {
         width: 100%;
-        grid-column: 1 / 1;
-        grid-row: 1 / 5;
-        margin: 40vh auto auto 5%;
+        align-self: center;
+        margin: 0;
+        height: 100%;
+        flex-basis: 150%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -46,6 +48,7 @@
 
     @include tablet {
         font-size: 38px;
+        margin: 0;
     }
 
     @include laptop {
@@ -99,24 +102,14 @@
     margin: 5% auto 0 auto;
 
     @include tablet {
+        margin: 0;
+        display: flex;
+        height: 100%;
         width: 100%;
-        grid-row: 1 / 5;
-        margin: 30vh auto;
-        grid-column: 2 / 2;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
-
-    @include laptop {
-        margin: 28vh auto;
-    }
-
-    @include desktop {
-        margin: 30vh auto;
-    }
-
-    @include wideScreen {
-
-    }
-
 }
 
 .homepage .menuBlock .menuItem {
@@ -124,53 +117,37 @@
     font-weight: 300;
     font-size: 20px;
     margin-bottom: 20px;
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    transition: text-decoration-color .4s;
 
     &:hover {
-        text-decoration: underline;
+        text-decoration-color: white;
+    }
+
+    @include tablet {
+        font-size: 20px;
     }
 
     @include laptop {
-        font-size: 22px;
-        margin-bottom: 24px;
+        font-size: 20px;
+        margin: 24px 0;
     }
 
     @include desktop {
-        font-size: 26px;
+        font-size: 27px;
     }
 
     @include largeDesktop {
-        font-size: 30px;
-        margin-bottom: 40px;
+        font-size: 35px;
+        margin: 40px 0;
     }
 
     @include wideScreen {
         font-size: 45px;
-        margin-bottom: 65px;
+        margin: 65px 0;
     }
-}
-
-.cursor {
-    width: 8px;
-    height: 40px;
-    display: inline-block;
-    color: white;
-    animation: blink 1.5s infinite steps(1, end);
-}
-
-@keyframes blink {
-    from {
-        color: white;
-    }
-    50% {
-        color: transparent;
-    }
-    to {
-        color: white;
-    }
-}
-
-.word {
-    display: inline-block;
 }
 
 .letters {
@@ -179,7 +156,6 @@
 }
 
 .letter {
-    
     display: inline-block;
     transition: transform .3s;
 
@@ -211,10 +187,8 @@
     }
 }
 
-/* CSS */
 .resumeButton {
-
-    margin-top: 20px;
+    margin-top: 30px;
     text-decoration: none;
     height: 2em;
     align-items: center;
@@ -226,7 +200,6 @@
                 #D6D6E7 0 -3px 0 inset;
     color: rgba(59, 54, 111, 1);
     cursor: pointer;
-    // height: 48px;
     padding: 0 1em;
     position: relative;
     transition: all .2s;
