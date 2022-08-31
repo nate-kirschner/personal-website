@@ -9,13 +9,10 @@
     cursor: pointer;
     position: relative;
 
-    &:hover {
-        box-shadow: 5px 5px 5px 5px black;
-    }
-
     z-index: 0;
 
     background-color: rgba(44, 32, 255, .1);
+    box-shadow: 0;
 
     @include tablet {
         width: 70%;
@@ -27,6 +24,10 @@
 
     @include desktop {
         width: 50%;
+    }
+
+    &:hover {
+        box-shadow: 0px 0px 15px 5px rgb(65, 64, 64);
     }
 
 }
@@ -61,7 +62,7 @@
     }
 
     @include largeDesktop {
-        font-size: 35px;
+        font-size: 40px;
     }
 
     @include wideScreen {
@@ -92,7 +93,7 @@
     }
 
     @include largeDesktop {
-        font-size: 26px;
+        font-size: 30px;
     }
 
     @include wideScreen {
@@ -105,7 +106,7 @@
     transition: height .4s;
     overflow-y: auto;
     overflow-x: hidden;
-    box-shadow: 5px 5px 5px 5px black;
+    box-shadow: 0px 0px 15px 5px rgb(65, 64, 64);
 
     .skillIcon {
         opacity: 0;
@@ -115,12 +116,16 @@
 
 .projectCard#not-selected {
     height: 10em;
-    transition: height .4s;
+    transition: all .4s;
     overflow-y: hidden;
     overflow-x: hidden;
 
     @include largeDesktop {
         height: 15em;
+    }
+
+    @include wideScreen {
+        height: 17em;
     }
 }
 
