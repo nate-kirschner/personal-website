@@ -6,13 +6,19 @@ export default function Home({ allRefs, scrollToPage }) {
 
     const [animate, setAnimate] = useState(false);
 
+    useEffect(() => {
+        if (animate) {
+            setTimeout(() => setAnimate(false), [1500]);
+        }
+    }, [animate])
+
     return (
         <div className="homepage" ref={allRefs["Home"]}>
             <div className="titleBlock">
                 <h1 className={"mainTitle " + (animate && "animate")} 
                 >
                         Hi, I'm&nbsp;
-                        <div className="letters" onMouseEnter={() => setAnimate(true)} onClick={() => setAnimate(true)}>
+                        <div className="letters" onClick={() => setAnimate(true)}>
                             <div className="letter">N</div>
                             <div className="letter">a</div>
                             <div className="letter">t</div>

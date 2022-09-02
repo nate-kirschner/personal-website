@@ -118,12 +118,11 @@
     font-size: 20px;
     margin-bottom: 20px;
     cursor: pointer;
-    text-decoration: underline;
-    text-decoration-color: transparent;
-    transition: text-decoration-color .4s;
+    text-decoration: none;
+    transition: text-shadow .2s;
 
     &:hover {
-        text-decoration-color: white;
+        text-shadow: 0 0 15px white;
     }
 
     @include tablet {
@@ -153,6 +152,7 @@
 .letters {
     display: inline-block;
     white-space: nowrap;
+    cursor: pointer;
 }
 
 .letter {

@@ -23,7 +23,7 @@ import { useEffect, useState, useRef } from 'react';
 
 export default function ProjectCard({ title, description, cardClickedFunction, selected, icons }) {
 
-    const viewInTabIcon = <img className="viewInNewTabIcon" alt="View in new tab icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAqklEQVRIie2Quw0CMRBEx4gWOJFcP1RyEpSLA3KukEdiEDL+7Nkmgsls7cybXemvLQJOwEpBb7PVGUlyEeAuaS6VcM65J6A2k9rgo0FNwAG45jboAgAT4IPNDwVEzW/AcRggFW7yWwC58CGAUrhJJUB3eAlgDW860ZbmrYBL+PbAlDW3AsL/uRbeBbAq5d+1hln1dcA+eq+S5p4zhYyX4g2WeKAhfOnw/6IeM2CpfvHVCrkAAAAASUVORK5CYII="></img>
+    const viewInTabIcon = <img className="viewInNewTabIcon" alt="View in new tab icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAqklEQVRIie2Quw0CMRBEx4gWOJFcP1RyEpSLA3KukEdiEDL+7Nkmgsls7cybXemvLQJOwEpBb7PVGUlyEeAuaS6VcM65J6A2k9rgo0FNwAG45jboAgAT4IPNDwVEzW/AcRggFW7yWwC58CGAUrhJJUB3eAlgDW860ZbmrYBL+PbAlDW3AsL/uRbeBbAq5d+1hln1dcA+eq+S5p4zhYyX4g2WeKAhfOnw/6IeM2CpfvHVCrkAAAAASUVORK5CYII=" loading="lazy"></img>
 
     const [isVisible, setIsVisible] = useState(false);
     const fadeInRef = useRef();
@@ -92,7 +92,7 @@ export default function ProjectCard({ title, description, cardClickedFunction, s
             <div className="skillIcons">
                 {
                     icons.map(icon => {
-                        return <img className="skillIcon" src={icon} alt="icon for the tool used in this project" />
+                        return <img className="skillIcon" src={icon} alt="icon for the tool used in this project" loading="lazy" />
                     })
                 }
             </div>
@@ -111,7 +111,9 @@ const projectSlides = {
 
         <div className="projectContent" key={2}>
             <img className="projectImage" src={bestBallHome}
-                alt="Best Ball Project Home" />
+                alt="Best Ball Project Home" 
+                loading="lazy"
+            />
             <p className="projectText">
                 Above is the home page of Best
                 Ball Majors. It displays a leaderboard
@@ -123,7 +125,7 @@ const projectSlides = {
 
         <div className="projectContent" key={3}>
             <img className="projectImage" src={bestBallLeagues}
-                alt="Best Ball Project Create League" />
+                alt="Best Ball Project Create League" loading="lazy" />
             <p className="projectText">
                 After navigating to Leagues page, there
                 is the option to create or join a league. This allows users to play
@@ -134,7 +136,7 @@ const projectSlides = {
 
         <div className="projectContent" key={4}>
             <img className="projectImage" src={bestBallLeaderboard}
-                alt="Best Ball Project Leaderboard" />
+                alt="Best Ball Project Leaderboard" loading="lazy" />
             <p className="projectText">
                 The leaderboard page above shows a
                 leaderboard with all users on the website.
@@ -143,7 +145,7 @@ const projectSlides = {
 
         <div className="projectContent" key={5}>
             <img className="projectImage" src={bestBallRoster}
-                alt="Best Ball Project Roster" />
+                alt="Best Ball Project Roster" loading="lazy" />
             <p className="projectText">
                 This is an example of a roster.
                 Users have the option to choose four
@@ -166,9 +168,9 @@ const projectSlides = {
         </div>,
         <div className="projectContent">
             <img className="projectImage" src={pseudonotetext}
-                alt="PseudoNote Text View" />
+                alt="PseudoNote Text View" loading="lazy" />
             <img className="projectImage" src={pseudonotecode}
-                alt="PseudoNote Code View" />
+                alt="PseudoNote Code View" loading="lazy" />
         </div>
     ],
     "Image Editor": [
@@ -184,7 +186,7 @@ const projectSlides = {
 
         <div className="projectContent" key={7}>
             <img className="projectImage" src={imageProcessAddLayer}
-                alt="Editor Project Add Layer" />
+                alt="Editor Project Add Layer" loading="lazy" />
             <p className="projectText">As shown above, the first step is always to create a
                 new layer. As many layers as needed can be created and each one
                 can have a different image, but each layer must be of the same
@@ -193,7 +195,7 @@ const projectSlides = {
 
         <div className="projectContent" key={8}>
             <img className="projectImage" src={imageProcessImport}
-                alt="Editor Project Import/Export" />
+                alt="Editor Project Import/Export" loading="lazy" />
             <p className="projectText">Once a layer is created, the user can
                 import
                 an image from their computer, create a checkerboard image for
@@ -210,7 +212,7 @@ const projectSlides = {
 
         <div className="projectContent" key={9}>
             <img className="projectImage" src={imageProcessLayers}
-                alt="Editor Project Layer Operations" />
+                alt="Editor Project Layer Operations" loading="lazy" />
             <p className="projectText">In this Layer Operations tab above, users have the ability to
                 remove
                 layers, swap layers, and toggle the visibility of layers. If a
@@ -221,7 +223,7 @@ const projectSlides = {
 
         <div className="projectContent" key={10}>
             <img className="projectImage" src={imageProcessAlter}
-                alt="Editor Project Operations" />
+                alt="Editor Project Operations" loading="lazy" />
             <p className="projectText">The Alter Image tab shows the image operations available.
                 Images can be blurred, sharpened, turned to grayscale or sepia,
                 downsized, or mosaiced. </p>
@@ -233,15 +235,15 @@ const projectSlides = {
             <div className="slideshow">
                 <div className="pictures">
                     <img className="projectImage" src={imageProcessBlur}
-                        alt="Editor Project Blur" />
+                        alt="Editor Project Blur" loading="lazy" />
                     <img className="projectImage" src={imageProcessSharpen}
-                        alt="Editor Project Sharpen" />
+                        alt="Editor Project Sharpen" loading="lazy" />
                     <img className="projectImage" src={imageProcessMosaic}
-                        alt="Editor Project Mosaic" />
+                        alt="Editor Project Mosaic" loading="lazy" />
                     <img className="projectImage" src={imageProcessGrayscale}
-                        alt="Editor Project Grayscale" />
+                        alt="Editor Project Grayscale" loading="lazy" />
                     <img className="projectImage" src={imageProcessSepia}
-                        alt="Editor Project Sepia" />
+                        alt="Editor Project Sepia" loading="lazy" />
                 </div>
             </div>
         </div>
@@ -260,7 +262,7 @@ const projectSlides = {
                 You can visit the website at <a href="https://tohnews.com" target="_blank" rel="noreferrer">tohnews.com</a>
             </p>
             <img className="projectImage tohNewsImage" src={tohNews}
-                alt="TOH News Page" />
+                alt="TOH News Page" loading="lazy" />
         </div>
     ],
     "Recommendr": [

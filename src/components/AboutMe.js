@@ -55,17 +55,17 @@ export default function AboutMe({headerClicked, allRefs, scrollToPage}) {
             <div className="aboutBox">
                     <div className="iconWrapper profile" ref={fadeInRefs.profile} id={isVisible.profile ? "inView" : "outView"}>
                         <div className="profileDiv">
-                            <img className="profilePic" src={profilePic} alt="Profile"/>
+                            <img className="profilePic" src={profilePic} alt="Profile" loading="lazy"/>
                         </div>
                     </div>
                     <div className="iconWrapper school" ref={fadeInRefs.school} id={isVisible.school ? "inView" : "outView"}>
-                        <img src={schoolIcon96} alt="school icon" />
+                        <img src={schoolIcon96} alt="school icon" loading="lazy" />
                     </div>
                     <div className="iconWrapper work" ref={fadeInRefs.work} id={isVisible.work ? "inView" : "outView"}>
-                        <img src={workIcon96} alt="work icon" />
+                        <img src={workIcon96} alt="work icon" loading="lazy" />
                     </div>
                     <div className="iconWrapper resume" ref={fadeInRefs.resume} id={isVisible.resume ? "inView" : "outView"}>
-                        <a href={resume} target="_blank" rel="noreferrer"><img src={resumeIcon96} alt="resume icon" /></a>
+                        <a href={resume} target="_blank" rel="noreferrer"><img src={resumeIcon96} alt="resume icon" loading="lazy" /></a>
                     </div>
                     <div className="textWrapper profile" id={isVisible.profile ? "inView" : "outView"}>
                         <p>
