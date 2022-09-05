@@ -14,6 +14,10 @@ import imageProcessGrayscale from "../images/imageEditor/ImageProcessGrayscale.p
 import imageProcessSepia from "../images/imageEditor/ImageProcessSepia.png";
 import imageProcessMosaic from "../images/imageEditor/ImageProcessMosaic.png";
 
+import rmsHome from '../images/rateMySite/rmsHome.png';
+import rmsBrowse from '../images/rateMySite/rmsBrowse.png';
+import rmsPost from '../images/rateMySite/rmsPost.png';
+
 import tohNews from "../images/TOHNews.png";
 
 import pseudonotetext from '../images/pseudonote/pseudonotetext.jpeg';
@@ -85,6 +89,13 @@ export default function ProjectCard({ title, description, cardClickedFunction, s
                     </a>
                 )
             }
+            {
+                title === "Rate My Site" && (
+                    <a href="https://ratemysite.xyz" target="_blank" rel="noreferrer">
+                        {viewInTabIcon}
+                    </a>
+                )
+            }
             {description}
             {
                 selected === title && projectSlides[title]
@@ -101,6 +112,33 @@ export default function ProjectCard({ title, description, cardClickedFunction, s
 }
 
 const projectSlides = {
+    "Rate My Site": [
+        <div className="projectContent" key={1}>
+            <p className="projectText">
+                I made this website to be a collection of personal websites for developers. It serves as a place to seek inspiration from others, and to receive feedback on your own work. <br />
+                The frontend is made with React, and the serverless backend is deployed with AWS Lambda, RDS, and API Gateway.
+            </p>
+            <img className="projectImage" src={rmsHome}
+                alt="Rate My Site Home" 
+                loading="lazy"
+            />
+        </div>,
+        <div className="projectContent" key={2}>
+            <p className="projectText">
+                On the browse page, you can view all of the posted websites. A post consists of a title, an iframe with the website, and an optional comment section. <br />
+                You can change the sorted order of the posts by clicking the Browse button in the header and selecting an option from the dropdown.
+            </p>
+            <img className="projectImage" src={rmsBrowse}
+                alt="Rate My Site Browse" loading="lazy" />
+        </div>,
+        <div className="projectContent" key={2}>
+        <p className="projectText">
+            On the post page, you can give your post a title, url, and an optional description. Once posted, you will get a link to view your post, but it won't appear on the browse page until it gets approved.
+        </p>
+        <img className="projectImage" src={rmsPost}
+            alt="Rate My Site Post" loading="lazy" />
+    </div>
+    ],
     "Best Ball Majors": [
         <div className="projectContent" key={1}>
             <p className="projectText">
@@ -158,12 +196,12 @@ const projectSlides = {
     "PseudoNote": [
         <div className="projectContent" key={14}>
             <p className="projectText">
-                I built this hackathon project with a partner over the course of 48 hours. We were tired of taking notes for computer science classes with text editors that couldn't format code correctly. Our site allows users to switch between code and text formatting, and download and upload files.
+                I built this project with a partner during a 48 hour hackathon. We were tired of taking notes for computer science classes with text editors that couldn't format code correctly. Our site allows users to switch between code and text formatting, and download and upload files.
             </p>
         </div>,
         <div className="projectContent" key={15}>
             <p className="projectText">
-                We used ReactJs to make the website and it is currently hosted on Github pages <a href="https://nate-kirschner.github.io/PseudoNote/" target="_blank" rel="noreferrer">here</a>.
+                We used ReactJs to make the website. You can read more about our process <a href="https://devpost.com/software/pseudonote-q56bih" target="_blank" rel="noreferrer">here</a>.
             </p>
         </div>,
         <div className="projectContent">

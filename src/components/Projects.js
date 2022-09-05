@@ -9,6 +9,7 @@ import javaIcon from '../images/skillsIcons/javaIcon.png';
 import mysqlIcon from '../images/skillsIcons/mysqlIcon.png';
 import nodeIcon from '../images/skillsIcons/nodeIcon.png';
 import reactIcon from '../images/skillsIcons/reactIcon.png';
+import awsIcon from '../images/skillsIcons/awsIcon.png';
 
 export default function Projects({ headerClicked, allRefs, scrollToPage }) {
 
@@ -34,6 +35,13 @@ export default function Projects({ headerClicked, allRefs, scrollToPage }) {
 const cards = (cardClickedFunction, selected) => {
     return (
         <div className="cards">
+            <ProjectCard
+                title="Rate My Site"
+                description={<p className="cardDescription">A website for sharing and getting feedback on personal websites.</p>}
+                cardClickedFunction={cardClickedFunction}
+                selected={selected}
+                icons={[htmlIcon, nodeIcon, awsIcon, reactIcon, mysqlIcon]}
+            />
             <ProjectCard
                 title="Best Ball Majors"
                 description={<p className="cardDescription">A fantasy golf website with weekly competitions to compete against friends.</p>}
@@ -62,13 +70,6 @@ const cards = (cardClickedFunction, selected) => {
                 selected={selected}
                 icons={[htmlIcon, reactIcon, cssIcon]}
             />
-            {/* <ProjectCard
-                title="Recommendr"
-                description={<p className="cardDescription">A website for sharing movies/tv shows/books/etc. with friends.</p>}
-                cardClickedFunction={cardClickedFunction}
-                selected={selected}
-                icons={[htmlIcon, nodeIcon, reactIcon, mysqlIcon, cssIcon]}
-            /> */}
         </div>
     )
 }
