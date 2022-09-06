@@ -1,10 +1,9 @@
 import "../styles/aboutMe.scss";
-import resume from "../images/Resume.pdf";
 import profilePic from "../images/profile-pic.jpg";
 import Header from "./Header";
 import schoolIcon96 from '../images/schoolIcons/school-96.png';
 import workIcon96 from '../images/workIcons/work-96.png';
-import resumeIcon96 from '../images/resumeIcons/resume-96.png';
+import interestsIcon96 from '../images/interestsIcon/interests-96.png';
 import { useEffect, useState, useRef } from "react";
 
 export default function AboutMe({headerClicked, allRefs, scrollToPage}) {
@@ -13,10 +12,10 @@ export default function AboutMe({headerClicked, allRefs, scrollToPage}) {
         profile: useRef(),
         school: useRef(),
         work: useRef(),
-        resume: useRef()
+        interests: useRef()
     }
 
-    const [isVisible, setIsVisible] = useState({ profile: false, school: false, work: false, resume: false });
+    const [isVisible, setIsVisible] = useState({ profile: false, school: false, work: false, interests: false });
 
     const callbackFunc = (entries) => {
         entries.forEach(entry => {
@@ -64,8 +63,8 @@ export default function AboutMe({headerClicked, allRefs, scrollToPage}) {
                     <div className="iconWrapper work" ref={fadeInRefs.work} id={isVisible.work ? "inView" : "outView"}>
                         <img src={workIcon96} alt="work icon" loading="lazy" />
                     </div>
-                    <div className="iconWrapper resume" ref={fadeInRefs.resume} id={isVisible.resume ? "inView" : "outView"}>
-                        <a href={resume} target="_blank" rel="noreferrer"><img src={resumeIcon96} alt="resume icon" loading="lazy" /></a>
+                    <div className="iconWrapper interests" ref={fadeInRefs.interests} id={isVisible.interests ? "inView" : "outView"}>
+                        <img src={interestsIcon96} alt="interests icon" loading="lazy" />
                     </div>
                     <div className="textWrapper profile" id={isVisible.profile ? "inView" : "outView"}>
                         <p>
@@ -87,11 +86,9 @@ export default function AboutMe({headerClicked, allRefs, scrollToPage}) {
                         </p>
                     </div> 
                     
-                    <div className="textWrapper resume" id={isVisible.resume ? "inView" : "outView"}>
+                    <div className="textWrapper interests" id={isVisible.interests ? "inView" : "outView"}>
                         <p>
-                            <a className="resumeLink" href={resume} target="_blank" rel="noreferrer">
-                                Feel free to check out my resume!
-                            </a>
+                            My interests include Skiing, Pickup/Intramural Basketball, Watching Heist Movies, and Discovering New Music.
                         </p>
                     </div>
             </div>
