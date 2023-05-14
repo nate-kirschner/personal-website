@@ -25,30 +25,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&display=swap');
 
  
+$background: #ece7de;
+$text: #242623;
+
+$gray0: #000000;
+$gray90: #efece7;
+$gray100: #ffffff;
+
+$blue20: #718ce5;
+$blue50: #4056a1;
+$blue90: #1b2444;
+
 html {
-  // overflow-y: hidden;
-  // overflow-x: hidden;
   height: 100%;
-  // background: linear-gradient(0deg, rgba(23, 23, 23, 1) 13%, rgba(59, 54, 111, 1) 88%);
 }
 
 body {
   overflow-y: auto;
   overflow-x: hidden;
   height: 100%;
-  // background-color: rgba(59,54,111,1);
-  background-color: rgba(23, 23, 23, 1);
-  // background-color: linear-gradient(0deg, rgba(23, 23, 23, 1) 13%, rgba(59, 54, 111, 1) 88%);
-  
+  background-color: $background;
   font-family: "Lato", sans-serif;
 }
 
-.bottomMargin {
-  width: 100%;
-  height: 20px;
+.page-title {
+    font-size: 24px;
+    font-weight: 300;
+    width: 100%;
+    color: $background;
+    background-color: $blue50;
+    padding: 10px 0;
 }
 
-.red {
-  display: inline-block;
-  color: var(--red-color);
-}
