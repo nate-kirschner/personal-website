@@ -1,93 +1,52 @@
 import "../styles/experience.scss";
 import ExperienceCard from "../components/ExperienceCard";
-import { useState } from "react";
-import Header from "../components/Header";
+import Spacer from "../common/Spacer";
 
-export default function Experience({ headerClicked, allRefs, scrollToPage }) {
-  const [activeCard, setActiveCard] = useState("none");
-  const [side, setSide] = useState("none");
-  const [expanded, setExpanded] = useState(false);
-
-  const onClick = (card, side) => {
-    if (activeCard !== card) {
-      setActiveCard(card);
-      setSide(side);
-    } else {
-      setActiveCard("none");
-      setSide("none");
-    }
-  };
-
+export default function Experience() {
   return (
-    <div className="experience" ref={allRefs["Experience"]}>
-      <Header
-        title="Experience"
-        clicked={(blurOn) => headerClicked(allRefs["Experience"], blurOn)}
-        allRefs={allRefs}
-        scrollToPage={scrollToPage}
-      />
-      <div className={"timelineDiv " + (expanded ? "expanded" : "")} id={side}>
-        <div className="timelineBar" />
+    <div className="experience">
+      <h2 className="page-title">Experience</h2>
+      <div className="cards">
         <ExperienceCard
-          titleDiv={
-            <h3 className="cardTitle">PowerAdvocate Software Developer Coop</h3>
-          }
-          title="PowerAdvocate Software Developer Coop"
-          date="Jan 2022 - July 2022"
-          num={1}
-          onClick={onClick}
-          active={activeCard}
+          company="Flexcar"
+          positions={[
+            {
+              title: "Frontend Development Co-op",
+              date: "Jan. 2023 - June 2023",
+            },
+          ]}
         />
         <ExperienceCard
-          titleDiv={
-            <h3 className="cardTitle">
-              <div className="red">Object Oriented</div> Design Teaching
-              Assistant
-            </h3>
-          }
-          title="Object Oriented Design Teaching Assistant"
-          date="Sep 2021 - Dec 2021"
-          num={2}
-          onClick={onClick}
-          active={activeCard}
+          company="PowerAdvocate (now WoodMackenzie)"
+          positions={[
+            {
+              title: "Software Development Co-op",
+              date: "Jan. 2022 - June 2022",
+            },
+          ]}
         />
         <ExperienceCard
-          titleDiv={<h3 className="cardTitle">Webscraping Freelance</h3>}
-          title="Webscraping Freelance"
-          date="Mar 2021 - April 2021"
-          num={3}
-          onClick={onClick}
-          active={activeCard}
+          company="Code 4 Community Club"
+          positions={[
+            { title: "Tech Lead", date: "Sept. 2023 - Present" },
+            { title: "Developer", date: "Sept. 2022 - Aug. 2023" },
+          ]}
         />
         <ExperienceCard
-          titleDiv={
-            <h3 className="cardTitle">NEU Virtual Reality Club Member</h3>
-          }
-          title="NEU Virtual Reality Club Member"
-          date="Sep 2020 - Present"
-          num={4}
-          onClick={onClick}
-          active={activeCard}
-        />
-        <ExperienceCard
-          titleDiv={
-            <h3 className="cardTitle">
-              Started At <div className="red">Northeastern</div> University
-            </h3>
-          }
-          title="Started At Northeastern University"
-          date="Sep 2020 - Present"
-          num={5}
-          onClick={onClick}
-          active={activeCard}
+          company="Northeastern University"
+          positions={[
+            {
+              title: "Teaching Assistant - Object Oriented Design",
+              date: "Sept. 2021 - Dec. 2021",
+            },
+            {
+              title: "Teaching Assistant - Logic and Computation",
+              date: "Sept. 2022 - Dec. 2022",
+            },
+          ]}
         />
       </div>
-      <div className="expandButton" onClick={() => setExpanded(!expanded)}>
-        <div className="horLine" />
-        <div className="circle" />
-        <div className="arrowLeft" />
-        <div className="arrowRight" />
-      </div>
+      <Spacer height="40px" />
     </div>
   );
 }

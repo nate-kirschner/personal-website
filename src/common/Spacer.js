@@ -1,14 +1,12 @@
-
-
-const Spacer = ({ width = 0, height = 0 }) => {
-    return (
-        <div
-            style={{
-                paddingLeft: width,
-                paddingBottom: height,
-            }}
-        />
-    )
-}
+const Spacer = ({ width = "100%", height = "100%" }) => {
+  return (
+    <div
+      style={{
+        paddingLeft: width,
+        paddingBottom: height,
+      }}
+    />
+  );
+};
 
 export default Spacer;

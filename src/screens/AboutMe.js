@@ -1,53 +1,51 @@
 import "../styles/aboutMe.scss";
-import EducationIcon from "../icons/EducationIcon";
-import WorkIcon from "../icons/WorkIcon";
-import SkiingIcon from "../icons/SkiingIcon";
 import Spacer from "../common/Spacer";
+import AboutSection from "../components/AboutSection";
 
-export default function AboutMe({ headerClicked, allRefs, scrollToPage }) {
+export default function AboutMe() {
   return (
-    <div className="about-me" ref={allRefs["About Me"]}>
+    <div className="about-me">
       <h2 className="page-title">About Me</h2>
       <div className="container">
         <p className="text">Here's the short version:</p>
-        <Spacer width="100px" />
 
-        <EducationIcon className="icon" />
-        <p className="text">
-          I'm in my third year at Northeastern:
-          <ul>
-            <li>Major: Computer Science</li>
-            <li>Minor: Business Administration</li>
-            <li>Expected Graduation: May 2024</li>
-          </ul>
-        </p>
+        <Spacer height="8px" />
+        <AboutSection
+          iconVariant="education"
+          text="I'm in my third year at Northeastern:"
+          bullets={[
+            { bullet: "Major: Computer Science" },
+            { bullet: "Minor: Business Administration" },
+            { bullet: "Expected Graduation: May 2024" },
+          ]}
+        />
 
-        <WorkIcon className="icon" />
-        <p className="text">
-          My work experience includes:
-          <ul>
-            <li>
-              6 month Software Development Co-op at PowerAdvocate (now
-              WoodMackenzie).
-            </li>
-            <li>6 month Frontend Co-op at Flexcar.</li>
-            <li>
-              2 semesters as a Teaching Assistant for Object Oriented Deisgn and
-              Logic and Computation classes
-            </li>
-          </ul>
-        </p>
+        <AboutSection
+          iconVariant="work"
+          text="My work experience includes:"
+          bullets={[
+            { bullet: "6 month Frontend Co-op at Flexcar" },
+            {
+              bullet:
+                "6 month Software Development Co-op at PowerAdvocate (now WoodMackenzie)",
+            },
+            {
+              bullet:
+                "2 semesters as a Teaching Assistant for Object Oriented Deisgn and Logic and Computation classes",
+            },
+          ]}
+        />
 
-        <SkiingIcon className="icon" />
-        <p className="text">
-          Some of my interests are:
-          <ul>
-            <li>Skiing</li>
-            <li>Pickup/Intramural basketball</li>
-            <li>Watching heist movies</li>
-            <li>Discovering new music</li>
-          </ul>
-        </p>
+        <AboutSection
+          iconVariant="skiing"
+          text="Some of my interests are:"
+          bullets={[
+            { bullet: "Skiing" },
+            { bullet: "Pickup/Intramural basketball" },
+            { bullet: "Watching heist movies" },
+            { bullet: "Discovering new music" },
+          ]}
+        />
       </div>
     </div>
   );
