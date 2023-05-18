@@ -1,0 +1,29 @@
+@import '../styles/defaults.scss';
+
+.image-carousel {
+    
+}
+
+.images-container {
+    display: flex;
+    overflow: hidden;
+}
+
+.image-carousel .image {
+    display: block;
+    width: 100vw;
+    height: auto;
+
+    @include tablet {
+        height: 50vh;
+        width: auto;
+    }
+}
+
+.image-carousel .controls {
+    margin: 20px auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    
+}

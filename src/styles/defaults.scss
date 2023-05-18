@@ -1,25 +1,10 @@
-@mixin largePhones {
-    @media only screen and (min-width: 321px) { @content; }
-  }
-  
+
 @mixin tablet {
   @media only screen and (min-width: 768px) { @content; }
 }
 
-@mixin laptop {
-  @media only screen and (min-width: 1024px) { @content; }
-}
-
 @mixin desktop {
   @media only screen and (min-width: 1440px) { @content; }
-}
-
-@mixin largeDesktop {
-  @media only screen and (min-width: 1900px) { @content; }
-}
-
-@mixin wideScreen {
-  @media only screen and (min-width: 2560px) { @content; }
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&display=swap');
@@ -30,6 +15,7 @@ $text: #242623;
 
 $gray0: #000000;
 $gray90: #efece7;
+$gray95: #f8f3eb;
 $gray100: #ffffff;
 
 $blue20: #718ce5;
@@ -47,6 +33,7 @@ body {
   height: 100%;
   background-color: $background;
   font-family: "Lato", sans-serif;
+  color: $blue90;
 }
 
 .page-title {
@@ -55,6 +42,21 @@ body {
     width: 100%;
     color: $background;
     background-color: $blue50;
-    padding: 10px 0;
+    line-height: 50px;
+
 }
 
+.content {
+    max-width: 1440px;
+    margin: auto;
+}
+
+.open-link-button {
+    background-color: $blue50;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: $background;
+    text-decoration: none;
+    border: none;
+    align-self: center;
+}

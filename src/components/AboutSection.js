@@ -7,9 +7,9 @@ const AboutSection = ({ text, bullets, iconVariant }) => {
       <div className="text">
         <p>{text}</p>
         <ul>
-          {bullets.map(({ bullet }) => {
+          {bullets.map(({ bullet, key }) => {
             return (
-              <li>
+              <li key={key}>
                 <p>{bullet}</p>
               </li>
             );

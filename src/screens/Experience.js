@@ -11,6 +11,7 @@ export default function Experience() {
           company="Flexcar"
           positions={[
             {
+              key: "flexcar",
               title: "Frontend Development Co-op",
               date: "Jan. 2023 - June 2023",
             },
@@ -20,6 +21,7 @@ export default function Experience() {
           company="PowerAdvocate (now WoodMackenzie)"
           positions={[
             {
+              key: "PA",
               title: "Software Development Co-op",
               date: "Jan. 2022 - June 2022",
             },
@@ -28,8 +30,12 @@ export default function Experience() {
         <ExperienceCard
           company="Code 4 Community Club"
           positions={[
-            { title: "Tech Lead", date: "Sept. 2023 - Present" },
-            { title: "Developer", date: "Sept. 2022 - Aug. 2023" },
+            { title: "Tech Lead", date: "Sept. 2023 - Present", key: "lead" },
+            {
+              title: "Developer",
+              date: "Sept. 2022 - Aug. 2023",
+              key: "developer",
+            },
           ]}
         />
         <ExperienceCard
@@ -38,10 +44,12 @@ export default function Experience() {
             {
               title: "Teaching Assistant - Object Oriented Design",
               date: "Sept. 2021 - Dec. 2021",
+              key: "OOD",
             },
             {
               title: "Teaching Assistant - Logic and Computation",
               date: "Sept. 2022 - Dec. 2022",
+              key: "Logic",
             },
           ]}
         />

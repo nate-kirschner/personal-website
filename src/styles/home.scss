@@ -17,24 +17,11 @@
 
 .homepage .title .main {
     font-size: 36px;
-    color: $blue90;
     font-weight: 800;
 }
 
 .homepage .title sub {
     font-size: 18px;
-    color: $blue90;
     font-weight: 400;
 }
 
-.resumeButton {
-    text-decoration: none;
-    border-width: 0;
-    color: $blue90;
-    background-color: $background;
-    cursor: pointer;    
-    font-size: 18px; 
-    // background-color: $blue50;
-    width: 100%;
-    margin: 40px auto;
-}

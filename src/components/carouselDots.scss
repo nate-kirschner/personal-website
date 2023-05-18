@@ -1,0 +1,21 @@
+@import '../styles/defaults.scss';
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    width: 100%;
+    flex-grow: 10;
+    align-self: center;
+}
+
+.carousel-dots .dot {
+    width: 8px;
+    height: 8px;
+    border: 1px solid $blue20;
+    border-radius: 50%;
+
+    &.selected {
+        background-color: $blue20;
+    }
+}
