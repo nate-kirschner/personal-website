@@ -3,11 +3,7 @@ import { Drawer } from "@mui/material";
 import ProjectImageCarousel from "./ProjectImageCarousel";
 import OpenLinkButton from "../OpenLinkButton";
 import useScreenBreakpoints from "../../hooks/useScreenBreakpoints";
-import ReactIcon from "../../icons/technologies/ReactIcon";
 import "./projectDrawer.scss";
-import NodeIcon from "../../icons/technologies/NodeIcon";
-import MySQLIcon from "../../icons/technologies/MySQLIcon";
-import AWSIcon from "../../icons/technologies/AWSIcon";
 import Spacer from "../../common/Spacer";
 import CloseIcon from "../../icons/CloseIcon";
 

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./experienceCard.scss";
-import ChevronRight from "../../icons/ChevronRight";
 import ExperienceDrawer from "./ExperienceDrawer";
 import Spacer from "../../common/Spacer";
 
