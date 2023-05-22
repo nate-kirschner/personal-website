@@ -1,0 +1,40 @@
+@import '../../styles/defaults.scss';
+
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-grow: 1;
+
+    @include tablet {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        column-gap: 30px;
+        margin-right: 40px;
+    }
+}
+
+
+
+.menu-items .item {
+    text-decoration: none;
+    color: $blue90;
+    margin-left: 24px;
+    font-size: 28px;
+
+    @include tablet {
+        font-size: 16px;
+    }
+}
+
+// Style View Resume button on mobile menu
+.menu .menu-items .open-link-button {
+    font-size: 28px;
+    text-align: left;
+    margin-left: 0;
+    border-radius: 0px;
+    width: 100%;
+}

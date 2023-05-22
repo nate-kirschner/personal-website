@@ -1,10 +1,10 @@
-import "../styles/home.scss";
-import Menu from "../components/Menu";
+import "./home.scss";
+import Header from "../components/header/Header";
 
 export default function Home() {
   return (
     <div className="homepage content">
-      <Menu />
+      <Header />
       <div className="title">
         <h1 className="main">
           Hi, I'm <div>Nate Kirschner</div>

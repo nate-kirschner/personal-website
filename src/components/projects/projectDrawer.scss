@@ -1,4 +1,4 @@
-@import '../styles/defaults.scss';
+@import '../../styles/defaults.scss';
 
 .project-drawer {
     height: 90vh;
@@ -16,11 +16,14 @@
 }
 
 .project-drawer .drawer-content {
-    // width: 100%;
     padding: 0 5% 40px 5%;
     display: flex;
     flex-direction: column;
     overflow: scroll;
-    // padding-bottom: 40px;
 }
 
+.project-drawer .icon-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}

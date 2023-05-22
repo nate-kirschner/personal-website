@@ -1,8 +1,7 @@
 import { useState } from "react";
-import ChevronRight from "../icons/ChevronRight";
-import { SwipeableDrawer } from "@mui/material";
+import ChevronRight from "../../icons/ChevronRight";
 
-import "../styles/projectCard.scss";
+import "./projectCard.scss";
 import ProjectDrawer from "./ProjectDrawer";
 
 const ProjectCard = ({ title, description, drawer }) => {

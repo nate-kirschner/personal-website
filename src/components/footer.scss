@@ -1,0 +1,11 @@
+@import '../styles/defaults.scss';
+
+.footer {
+    height: 100px;
+    width: 100vw;
+    background-color: $blue50;
+    display: flex;
+    column-gap: 24px;
+    justify-content: center;
+    align-items: center;
+}

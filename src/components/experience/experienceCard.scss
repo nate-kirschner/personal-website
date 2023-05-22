@@ -1,0 +1,65 @@
+@import '../../styles/defaults.scss';
+
+.experience-card {
+    width: 90%;
+    box-sizing: border-box;
+    margin: auto;
+    border-left: 1px solid $blue20;
+}
+
+.experience-card .company {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    margin-left: 16px;
+}
+
+.positions {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sub-positions {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 16px;
+}
+
+.experience-card .title {
+    text-align: left;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    margin-left: 16px;
+}
+
+.experience-card .date {
+    text-align: left;
+    font-size: 14px;
+    font-weight: 100;
+    margin: 0;
+}
+
+.experience-card .description {
+    text-align: left;
+    margin-left: 32px;
+    font-weight: 300;
+
+}
+
+.more-details {
+    background: none;
+    border: none;
+    font-weight: 600;
+    color: $blue50;
+    margin: 0;
+    margin-left: 32px;
+    padding: 0;
+    width: 100%;
+    text-align: left;
+}

@@ -1,0 +1,36 @@
+@import "../../styles/defaults.scss";
+
+.menu {
+    position: fixed;
+    top: 0;
+    
+    width: 100vw;
+    height: 100vh;
+    background-color: $background;
+    transition: left .5s;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &.open {
+        left: 0;
+    }
+
+    &.close {
+        left: 100%;
+    }
+}
+
+.menu .top-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu .close {
+    margin-top: 24px;
+    margin-right: 24px;
+}
+
+

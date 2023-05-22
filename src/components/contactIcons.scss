@@ -1,0 +1,11 @@
+@import '../styles/defaults.scss';
+
+.contact-icons {
+    display: flex;
+    margin-left: 0px;
+    column-gap: 8px;
+
+    @include tablet {
+        margin-left: 40px;
+    }
+}

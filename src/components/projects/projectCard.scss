@@ -1,4 +1,4 @@
-@import './defaults.scss';
+@import '../../styles/defaults.scss';
 
 .project-card {
     width: 90%;
@@ -8,16 +8,19 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 .project-card .title {
     text-align: left;
     font-size: 20px;
+    margin-left: 16px;
 }
 
 .project-card .description {
     text-align: left;
     font-size: 18px;    
+    margin-left: 32px;
 }
 
 .project-card .text-container {

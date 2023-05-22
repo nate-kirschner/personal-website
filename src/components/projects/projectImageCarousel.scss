@@ -1,4 +1,4 @@
-@import '../styles/defaults.scss';
+@import '../../styles/defaults.scss';
 
 .image-carousel {
     
@@ -26,4 +26,8 @@
     display: flex;
     justify-content: space-between;
     
+}
+
+.image-carousel .icon {
+    cursor: pointer;
 }

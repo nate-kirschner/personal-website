@@ -10,6 +10,8 @@ const AboutIcon = ({ iconVariant }) => {
       return <WorkIcon className="icon" />;
     case "skiing":
       return <SkiingIcon className="icon" />;
+    default:
+      return;
   }
 };
 

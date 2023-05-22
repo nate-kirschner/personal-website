@@ -3,9 +3,7 @@ import Home from "./screens/Home";
 import AboutMe from "./screens/AboutMe";
 import Projects from "./screens/Projects";
 import Experience from "./screens/Experience";
-import Contact from "./screens/Contact";
-import { useRef } from "react";
-import Menu from "./components/Menu";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -14,6 +12,7 @@ function App() {
       <AboutMe />
       <Projects />
       <Experience />
+      <Footer />
     </div>
   );
 }

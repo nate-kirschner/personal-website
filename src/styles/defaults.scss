@@ -18,8 +18,10 @@ $gray90: #efece7;
 $gray95: #f8f3eb;
 $gray100: #ffffff;
 
+$blue05: #a8b4df;
 $blue20: #718ce5;
 $blue50: #4056a1;
+$blue55: #384d90;
 $blue90: #1b2444;
 
 html {
@@ -59,4 +61,10 @@ body {
     text-decoration: none;
     border: none;
     align-self: center;
+    cursor: pointer;
+    transition: background-color .3s;
+
+    &:hover {
+        background-color: $blue55;
+    }
 }

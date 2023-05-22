@@ -1,4 +1,4 @@
-import "../styles/contact.scss";
+import "./contact.scss";
 
 export default function Contact() {
   // TODO Need email, linked in, and github

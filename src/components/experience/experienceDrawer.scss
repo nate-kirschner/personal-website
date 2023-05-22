@@ -1,0 +1,41 @@
+@import '../../styles/defaults.scss';
+
+.experience-drawer {
+    height: 90vh;
+    max-height: 90vh;
+
+    @include tablet {
+        // min-width: 600px;
+        width: 600px;
+        // max-width: 600px;
+        // min-height: 100vh;
+        height: max-content;
+    }
+}
+
+.experience-drawer .drawer-content {
+    padding: 40px 24px;
+    background-color: $gray95;
+}
+
+.experience-drawer .list {
+
+    
+}
+
+.experience-drawer .tech-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 24px;
+    border: none;
+}
+
+.experience-drawer .tech-item {
+    background: #a8b4dfaa;
+    color: $blue90;
+    border-radius: 5px;
+    padding: 15px 10px;
+    
+}

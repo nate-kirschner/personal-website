@@ -1,10 +1,9 @@
-import "../styles/aboutMe.scss";
-import Spacer from "../common/Spacer";
+import "./aboutMe.scss";
 import AboutSection from "../components/AboutSection";
 
 export default function AboutMe() {
   return (
-    <div className="about-me">
+    <div className="about-me" id="about-me">
       <h2 className="page-title">About Me</h2>
       <div className="container content">
         <p className="">Here's the short version:</p>

@@ -1,9 +1,14 @@
 import { useState } from "react";
 import { Drawer } from "@mui/material";
 import ProjectImageCarousel from "./ProjectImageCarousel";
-import OpenLinkButton from "./OpenLinkButton";
-import useScreenBreakpoints from "../hooks/useScreenBreakpoints";
+import OpenLinkButton from "../OpenLinkButton";
+import useScreenBreakpoints from "../../hooks/useScreenBreakpoints";
+import ReactIcon from "../../icons/technologies/ReactIcon";
 import "./projectDrawer.scss";
+import NodeIcon from "../../icons/technologies/NodeIcon";
+import MySQLIcon from "../../icons/technologies/MySQLIcon";
+import AWSIcon from "../../icons/technologies/AWSIcon";
+import Spacer from "../../common/Spacer";
 
 const ProjectDrawer = ({ isOpen, onClose, images, bullets, url }) => {
   const [imageWidth, setImageWidth] = useState(200);
@@ -27,6 +32,15 @@ const ProjectDrawer = ({ isOpen, onClose, images, bullets, url }) => {
           })}
 
           <OpenLinkButton text="View Site" url={url} />
+
+          <Spacer height={40} />
+
+          <div className="icon-row">
+            <ReactIcon />
+            <NodeIcon />
+            <MySQLIcon />
+            <AWSIcon />
+          </div>
         </div>
       </div>
     </Drawer>

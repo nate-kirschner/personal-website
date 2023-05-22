@@ -1,12 +1,13 @@
-@import './defaults.scss';
+@import "../styles/defaults.scss";
 
-.experience {
+.projects {
     background: $background;
 }
 
-.experience .cards {
+.projects .cards {
     max-width: 600px;
     margin: auto;
     display: flex;
     flex-direction: column;
+    row-gap: 20px;
 }

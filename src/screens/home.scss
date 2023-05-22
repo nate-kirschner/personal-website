@@ -1,16 +1,18 @@
-@import "./defaults.scss";
+@import "../styles/defaults.scss";
 
 .homepage {
     height: 100vh;
     background-color: $background;
-    scroll-snap-align: start;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 .homepage .title {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 90%;
     margin: auto;
 }
@@ -18,10 +20,12 @@
 .homepage .title .main {
     font-size: 36px;
     font-weight: 800;
+    margin: 0;
 }
 
 .homepage .title sub {
     font-size: 18px;
     font-weight: 400;
+    margin: 0;
 }
 
