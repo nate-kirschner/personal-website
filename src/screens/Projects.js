@@ -8,12 +8,13 @@ export default function Projects() {
     <div className="projects" id="projects">
       <h2 className="page-title">Projects</h2>
       <div className="cards">
-        {projects.map(({ title, description, drawer }) => {
+        {projects.map(({ title, description, techUsed, drawer }) => {
           return (
             <ProjectCard
               key={title}
               title={title}
               description={description}
+              techUsed={techUsed}
               drawer={drawer}
             />
           );

@@ -28,7 +28,7 @@ const ProjectImageCarousel = ({ images, imageWidth, setImageWidth }) => {
     <div className="image-carousel">
       <div className="images-container" ref={carouselRef}>
         {images.map((url) => {
-          const image = require(`../../assets/ratemysite/${url}`);
+          const image = require(`../../assets/${url}`);
           return (
             <img
               key={image}

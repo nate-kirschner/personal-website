@@ -30,3 +30,20 @@
 .project-card .icon {
     flex-shrink: 0;
 }
+
+.project-card .tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 16px;
+    row-gap: 16px;
+    align-items: flex-start;
+    margin-left: 32px;
+}
+
+.project-card .tech-item {
+    background: #a8b4dfaa;
+    color: $blue90;
+    border-radius: 5px;
+    padding: 5px 5px;
+    flex-grow: 0;
+}
