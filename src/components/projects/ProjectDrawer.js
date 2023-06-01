@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { Drawer } from "@mui/material";
 import ProjectImageCarousel from "./ProjectImageCarousel";
-import OpenLinkButton from "../OpenLinkButton";
+import OpenLinkButton from "../../common/OpenLinkButton";
 import useScreenBreakpoints from "../../hooks/useScreenBreakpoints";
 import "./projectDrawer.scss";
 import Spacer from "../../common/Spacer";
-import CloseIcon from "../../icons/CloseIcon";
+import DrawerCloseButton from "../../common/DrawerCloseButton";
 
 const ProjectDrawer = ({ isOpen, onClose, images, bullets, url }) => {
   const [imageWidth, setImageWidth] = useState(200);
@@ -18,27 +18,26 @@ const ProjectDrawer = ({ isOpen, onClose, images, bullets, url }) => {
     <>
       <Drawer anchor={anchor} open={isOpen} onClose={onClose}>
         <div className="project-drawer" style={{ width: `${imageWidth}px` }}>
-          <ProjectImageCarousel
-            images={images}
-            imageWidth={imageWidth}
-            setImageWidth={setImageWidth}
-          />
+          <div className="inner-container">
+            <ProjectImageCarousel
+              images={images}
+              imageWidth={imageWidth}
+              setImageWidth={setImageWidth}
+            />
 
-          <div className="drawer-content">
-            {bullets.map(({ text, key }) => {
-              return <p key={key}>{text}</p>;
-            })}
+            <div className="drawer-content">
+              <OpenLinkButton text="View Site" url={url} />
 
-            <OpenLinkButton text="View Site" url={url} />
+              {bullets.map(({ text, key }) => {
+                return <p key={key}>{text}</p>;
+              })}
 
-            <Spacer height={40} />
+              <Spacer height="24px" />
+            </div>
           </div>
+
+          <DrawerCloseButton onClose={onClose} />
         </div>
-        <CloseIcon
-          className="drawer-close-icon"
-          color="#ece7de"
-          onClick={onClose}
-        />
       </Drawer>
     </>
   );

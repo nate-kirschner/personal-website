@@ -3,9 +3,11 @@
 .homepage {
     height: 100vh;
     background-color: $background;
-    overflow-x: hidden;
+    overflow-x: visible;
+    overflow-y: hidden;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .homepage .title {
@@ -14,18 +16,17 @@
     flex-direction: column;
     justify-content: center;
     width: 90%;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .homepage .title .main {
     font-size: 36px;
     font-weight: 800;
-    margin: 0;
+    margin: 0;    
 }
 
-.homepage .title sub {
+.homepage .title .sub {
     font-size: 18px;
     font-weight: 400;
     margin: 0;
 }
-

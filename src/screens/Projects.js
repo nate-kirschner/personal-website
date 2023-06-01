@@ -20,7 +20,7 @@ export default function Projects() {
           );
         })}
       </div>
-      <Spacer height="40px" />
+      <Spacer height="64px" />
     </div>
   );
 }

@@ -24,6 +24,8 @@ $blue50: #4056a1;
 $blue55: #384d90;
 $blue90: #1b2444;
 
+$red70: #870d27;
+
 html {
   height: 100%;
   overflow-x: hidden;
@@ -45,7 +47,7 @@ body {
     color: $background;
     background-color: $blue50;
     line-height: 50px;
-
+    margin-top: 0;
 }
 
 .content {

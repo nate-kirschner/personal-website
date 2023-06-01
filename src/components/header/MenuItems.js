@@ -1,4 +1,4 @@
-import OpenLinkButton from "../OpenLinkButton";
+import OpenLinkButton from "../../common/OpenLinkButton";
 import resume from "../../images/Resume.pdf";
 import "./menuItems.scss";
 

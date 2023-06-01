@@ -1,5 +1,6 @@
-import "./aboutMe.scss";
 import AboutSection from "../components/AboutSection";
+import Spacer from "../common/Spacer";
+import "./aboutMe.scss";
 
 export default function AboutMe() {
   return (
@@ -47,6 +48,7 @@ export default function AboutMe() {
           ]}
         />
       </div>
+      <Spacer height="64px" />
     </div>
   );
 }

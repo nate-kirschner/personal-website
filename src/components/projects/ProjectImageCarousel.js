@@ -3,6 +3,7 @@ import "./projectImageCarousel.scss";
 import ChevronLeft from "../../icons/ChevronLeft";
 import ChevronRight from "../../icons/ChevronRight";
 import CarouselDots from "./CarouselDots";
+import Spacer from "../../common/Spacer";
 
 const ProjectImageCarousel = ({ images, imageWidth, setImageWidth }) => {
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
@@ -21,8 +22,14 @@ const ProjectImageCarousel = ({ images, imageWidth, setImageWidth }) => {
   };
 
   useEffect(() => {
-    carouselRef.current.scrollLeft = selectedImageIndex * imageWidth;
+    if (carouselRef.current) {
+      carouselRef.current.scrollLeft = selectedImageIndex * imageWidth;
+    }
   }, [selectedImageIndex, imageWidth]);
+
+  if (images === undefined || images.length === 0) {
+    return <Spacer height="40px" />;
+  }
 
   return (
     <div className="image-carousel">

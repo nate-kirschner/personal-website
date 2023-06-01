@@ -1,21 +1,25 @@
 @import '../../styles/defaults.scss';
 
 .experience-drawer {
-    height: 90vh;
-    max-height: 90vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $gray95;
 
     @include tablet {
-        // min-width: 600px;
         width: 600px;
-        // max-width: 600px;
-        // min-height: 100vh;
         height: max-content;
     }
 }
 
+.experience-drawer .inner-container {
+    overflow: scroll;
+}
+
 .experience-drawer .drawer-content {
     padding: 40px 24px;
-    background-color: $gray95;
+    
 }
 
 .experience-drawer .list {
