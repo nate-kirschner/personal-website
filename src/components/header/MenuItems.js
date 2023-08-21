@@ -28,7 +28,7 @@ const MenuItems = ({ onClick }) => {
         <span className="item-text">Experience</span>
         <MenuItemArrow />
       </a>
-      {breakpoint === 1 && <OpenLinkButton text="View Resume" url={resume} />}
+      {breakpoint >= 1 && <OpenLinkButton text="View Resume" url={resume} />}
     </div>
   );
 };
