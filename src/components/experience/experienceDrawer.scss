@@ -6,20 +6,18 @@
     flex-direction: column;
     justify-content: space-between;
     background-color: $gray95;
+    overflow: hidden;
 
     @include tablet {
         width: 600px;
-        height: max-content;
+        height: 100vh;
     }
-}
-
-.experience-drawer .inner-container {
-    overflow: scroll;
 }
 
 .experience-drawer .drawer-content {
     padding: 40px 24px;
-    
+    background-color: $gray95;
+    overflow-y: scroll;
 }
 
 .experience-drawer .list {

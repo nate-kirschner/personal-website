@@ -17,13 +17,14 @@ const ProjectCard = ({ title, description, techUsed, drawer }) => {
               return <div className="tech-item">{tech}</div>;
             })}
           </div>
-          <Spacer height="8px" />
+          <Spacer height="16px" />
         </div>
         {drawer && <ChevronRight />}
       </div>
 
       {drawer && (
         <ProjectDrawer
+          title={title}
           isOpen={isDrawerOpen}
           onClose={() => setIsDrawerOpen(false)}
           {...drawer}

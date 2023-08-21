@@ -6,8 +6,9 @@ import useScreenBreakpoints from "../../hooks/useScreenBreakpoints";
 import "./projectDrawer.scss";
 import Spacer from "../../common/Spacer";
 import DrawerCloseButton from "../../common/DrawerCloseButton";
+import DrawerOrModal from "../../common/DrawerOrModal";
 
-const ProjectDrawer = ({ isOpen, onClose, images, bullets, url }) => {
+const ProjectDrawer = ({ isOpen, onClose, images, bullets, url, title }) => {
   const [imageWidth, setImageWidth] = useState(200);
 
   const breakpoint = useScreenBreakpoints();
@@ -15,31 +16,36 @@ const ProjectDrawer = ({ isOpen, onClose, images, bullets, url }) => {
   const anchor = breakpoint === 0 ? "bottom" : "right";
 
   return (
-    <>
-      <Drawer anchor={anchor} open={isOpen} onClose={onClose}>
-        <div className="project-drawer" style={{ width: `${imageWidth}px` }}>
-          <div className="inner-container">
-            <ProjectImageCarousel
-              images={images}
-              imageWidth={imageWidth}
-              setImageWidth={setImageWidth}
-            />
+    <DrawerOrModal anchor={anchor} open={isOpen} onClose={onClose}>
+      <div className="project-drawer" style={{ width: `${imageWidth}px` }}>
+        <div className="inner-container">
+          <ProjectImageCarousel
+            images={images}
+            imageWidth={imageWidth}
+            setImageWidth={setImageWidth}
+          />
 
-            <div className="drawer-content">
-              <OpenLinkButton text="View Site" url={url} />
+          <div className="drawer-content">
+            <DrawerCloseButton text="Back To Projects" onClose={onClose} />
 
-              {bullets.map(({ text, key }) => {
-                return <p key={key}>{text}</p>;
-              })}
+            {bullets.map(({ text, key }) => {
+              return <p key={key}>{text}</p>;
+            })}
 
-              <Spacer height="24px" />
-            </div>
+            <Spacer height="24px" />
           </div>
 
-          <DrawerCloseButton onClose={onClose} />
+          <div className="link-container">
+            <OpenLinkButton
+              text={title === "PseudoNote" ? "View Demo" : "View Site"}
+              url={url}
+            />
+          </div>
+
+          <Spacer height="40px" />
         </div>
-      </Drawer>
-    </>
+      </div>
+    </DrawerOrModal>
   );
 };
 

@@ -3,7 +3,7 @@
 .menu-items {
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
+    row-gap: 32px;
     align-items: flex-start;
     justify-content: flex-start;
     flex-grow: 1;
@@ -17,25 +17,28 @@
     }
 }
 
-
-
 .menu-items .item {
     text-decoration: none;
     color: $blue90;
+    margin: 0;
     margin-left: 24px;
-    font-size: 28px;
-
+    font-size: 24px;
+    line-height: 50px;
+    display: flex;
+    align-items: center;    
+    
     @include tablet {
-        font-size: 16px;
         margin: 0;
+        font-size: 18px;
+        line-height: 0px;
     }
 }
 
+
 // Style View Resume button on mobile menu
-.menu .menu-items .open-link-button {
-    font-size: 28px;
+.menu .open-link-button {
+    font-size: 20px;
     text-align: left;
     margin-left: 0;
-    border-radius: 0px;
-    width: 100%;
+    margin-bottom: calc(100lvh - 100svh + 40px);
 }

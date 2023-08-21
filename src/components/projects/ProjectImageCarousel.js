@@ -47,14 +47,18 @@ const ProjectImageCarousel = ({ images, imageWidth, setImageWidth }) => {
           );
         })}
       </div>
-      <div className="controls">
-        <ChevronLeft onClick={scrollLeft} />
-        <CarouselDots
-          selectedIndex={selectedImageIndex}
-          numberOfDots={images.length}
-        />
-        <ChevronRight onClick={scrollRight} />
-      </div>
+      {numberOfImages > 1 ? (
+        <div className="controls">
+          <ChevronLeft onClick={scrollLeft} />
+          <CarouselDots
+            selectedIndex={selectedImageIndex}
+            numberOfDots={images.length}
+          />
+          <ChevronRight onClick={scrollRight} />
+        </div>
+      ) : (
+        <Spacer height="16px" />
+      )}
     </div>
   );
 };

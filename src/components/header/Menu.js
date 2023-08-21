@@ -1,7 +1,9 @@
 import "./menu.scss";
 import CloseIcon from "../../icons/CloseIcon";
 import MenuItems from "./MenuItems";
-import Footer from "../Footer";
+import resume from "../../images/Resume.pdf";
+import OpenLinkButton from "../../common/OpenLinkButton";
+import Spacer from "../../common/Spacer";
 
 const Menu = ({ className, onClose }) => {
   return (
@@ -9,8 +11,9 @@ const Menu = ({ className, onClose }) => {
       <div className="top-container">
         <CloseIcon className="close" onClick={onClose} />
       </div>
+      <Spacer height="24px" />
       <MenuItems onClick={onClose} />
-      <Footer />
+      <OpenLinkButton text="View My Resume" url={resume} />
     </div>
   );
 };

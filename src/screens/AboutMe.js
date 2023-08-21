@@ -11,7 +11,7 @@ export default function AboutMe() {
 
         <AboutSection
           iconVariant="education"
-          text="I'm in my third year at Northeastern:"
+          text="I'm in my fourth year at Northeastern:"
           bullets={[
             { bullet: "Major: Computer Science", key: "major" },
             { bullet: "Minor: Business Administration", key: "minor" },
@@ -33,6 +33,11 @@ export default function AboutMe() {
               bullet:
                 "2 semesters as a Teaching Assistant for Object Oriented Deisgn and Logic and Computation classes",
               key: "TA",
+            },
+            {
+              bullet:
+                "1 year as developer for Code 4 Community Club, now tech lead for the upcoming year.",
+              key: "C4C",
             },
           ]}
         />

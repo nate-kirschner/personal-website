@@ -4,6 +4,7 @@
     display: flex;
     margin-left: 0px;
     column-gap: 24px;
+    justify-content: center;
 
     @include tablet {
         margin-left: 40px;

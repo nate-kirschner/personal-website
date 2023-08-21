@@ -1,14 +1,15 @@
+import BackArrow from "../icons/BackArrow";
 import Spacer from "./Spacer";
 import "./drawerCloseButton.scss";
 
-const DrawerCloseButton = ({ onClose }) => {
+const DrawerCloseButton = ({ onClose, text }) => {
   return (
     <div className="close-container">
-      <Spacer height="16px" />
       <button className="close" onClick={onClose}>
-        Close
+        <BackArrow />
+        <Spacer width="4px" height="0" />
+        <span className="close-text">{text}</span>
       </button>
-      <Spacer height="40px" />
     </div>
   );
 };

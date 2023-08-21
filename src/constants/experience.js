@@ -9,8 +9,36 @@ const experience = [
       },
     ],
     description:
-      "Implemented redesign of company website, working closely with UX and product to ensure pixel-perfect quality. Also developed a new, React Native mobile app, working specifically on features related to push notifications and drivers license verification.",
-    drawer: { bullets: [] },
+      "Implemented redesign of company website. Developed a new React Native mobile app, working on features related to push notifications and drivers license verification.",
+    drawer: {
+      techUsed: ["ReactJs", "React Native", "Typescript", "GraphQL"],
+      bullets: [
+        {
+          text: "Owned development of features in React Native app to allow users to refer other customers, verify their driver’s license, and edit push notification settings",
+          key: "1",
+        },
+        {
+          text: "Built cost comparison section of redesigned company homepage to demonstrate benefits of new pricing changes to customers",
+          key: "2",
+        },
+        {
+          text: "Converted complex figma designs to ReactJS with high attention to detail while ensuring on time delivery for aggressive deadlines",
+          key: "3",
+        },
+        {
+          text: "Developed a new user flow for upgrading legacy accounts with ReactJS and GraphQL",
+          key: "4",
+        },
+        {
+          text: "Collaborated with departments such as UX and product to complete deliverables under tight deadlines",
+          key: "5",
+        },
+        {
+          text: "Engaged in standups, refinements, and retrospectives to ensure a smooth agile process, offering and receiving frequent feedback",
+          key: "6",
+        },
+      ],
+    },
   },
   {
     company: "PowerAdvocate (now WoodMackenzie)",
@@ -22,7 +50,7 @@ const experience = [
       },
     ],
     description:
-      "Developed full-stack features ranging from data pipelines to new UI screens and modals to allow clients an easier experience viewing their data. Worked closely with engineers in an agile team to quickly release features to production and meet requirements of product owners.",
+      "Developed full-stack features ranging from data pipelines to new UI screens and modals to allow clients an easier experience viewing their data.",
     drawer: {
       techUsed: [
         "ReactJs",
@@ -80,8 +108,32 @@ const experience = [
       },
     ],
     description:
-      "Building a website for This Star Won't Go Out, an organization which provides financial grants to families of children with cancer. Our contributions will help streamline their processes, previously done through email, to help reach more families faster. As the Tech Lead for this project, I have the responsibilities of leading weekly team meetings, delegating work to developers, communicating progess with the club e-board, reviewing code quality, and making design decisions.",
-    drawer: { bullets: [] },
+      "Building a website for This Star Won't Go Out, an organization which provides financial grants to families of children with cancer.",
+    drawer: {
+      techUsed: ["ReactJs", "NodeJs", "Typescript", "AWS SAM", "AWS QLDB"],
+      bullets: [
+        {
+          text: "We are creating a website to help This Star Won't Go Out connect with social workers to give grants to families of children with cancer",
+          key: "1",
+        },
+        {
+          text: "As tech lead, I conduct weekly standup meetings, create tickets and delegate work, review code, and assist team members in meeting project goals",
+          key: "2",
+        },
+        {
+          text: "We are creating a website to help the organization streamline their processes, which were previously done entirely through email",
+          key: "3",
+        },
+        {
+          text: "I developed a REST API in NodeJS with Typescript and integrated endpoints into the ReactJS frontend",
+          key: "4",
+        },
+        {
+          text: "I helped prepared AWS QLDB for HIPPA compliance and AWS SAM for a serverless backend",
+          key: "5",
+        },
+      ],
+    },
   },
   {
     company: "Northeastern University",

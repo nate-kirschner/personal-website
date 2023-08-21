@@ -21,6 +21,9 @@ const projects = [
       ],
       bullets: [
         {
+          text: "When starting to build my personal website, I searched for sources of inspiration on the internet",
+        },
+        {
           text: "Built a website for developers to share their personal websites and receive feedback on their work",
           key: "1",
         },
@@ -66,7 +69,7 @@ const projects = [
     description: "A note taking app for computer science students.",
     techUsed: ["ReactJS"],
     drawer: {
-      images: [],
+      images: ["pseudonote/pseudonote-1.png"],
       bullets: [
         {
           text: "Competed in the HackBeanpot Hackathon to make a note-taking website which allows switching between text and code formatting",
@@ -81,18 +84,36 @@ const projects = [
           key: "3",
         },
       ],
-      url: "https://nate-kirschner.github.io/PseudoNote/",
+      url: "https://devpost.com/software/pseudonote-q56bih",
     },
   },
   {
     title: "The Other Half's News",
-    description: "A news aggregator which sorts articles by political bias.",
+    description:
+      "My first React website: A news aggregator which sorts articles by political bias.",
     techUsed: ["ReactJS"],
-    // drawer: {
-    //   images: [],
-    //   bullets: [],
-    //   url: "https://tohnews.natekirschner.com",
-    // },
+    drawer: {
+      images: ["tohnews/tohnews-1.png"],
+      bullets: [
+        {
+          text: "I used this site to teach myself ReactJs.",
+          key: "1",
+        },
+        {
+          text: "The site gets news articles from an api and displays them according to their political bias based on the source of the article. It's supposed to expose the user to articles they might not normally see in their news feed.",
+          key: "2",
+        },
+        {
+          text: "I made a lot of mistakes when building this: only using class components, storng the api key in the frontend, long and unweildy components, but it was a great learning experience.",
+          key: "3",
+        },
+        {
+          text: "And I still look at it from time to time to get my news.",
+          key: "4",
+        },
+      ],
+      url: "https://tohnews.natekirschner.com",
+    },
   },
 ];
 
