@@ -72,15 +72,15 @@ const projects = [
       images: ["pseudonote/pseudonote-1.png"],
       bullets: [
         {
-          text: "Competed in the HackBeanpot Hackathon to make a note-taking website which allows switching between text and code formatting",
+          text: "I competed in HackBeanpot 2022 Hackathon and created a a note-taking website which allows switching between text and code formatting",
           key: "1",
         },
         {
-          text: "Utilized React functional components with hooks such as useState, useEffect, and useRef",
+          text: "We utilized ReactJs for the frontend. Instead of a backend, we built in functionality to download notes to keep their formatting and reupload previously created documents",
           key: "2",
         },
         {
-          text: "Built ReactJS app in 48 hours with a partner",
+          text: "I worked with a partner to build the entire app in 48 hours",
           key: "3",
         },
       ],
