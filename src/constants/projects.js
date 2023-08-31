@@ -104,7 +104,7 @@ const projects = [
           key: "2",
         },
         {
-          text: "I made a lot of mistakes when building this: only using class components, storng the api key in the frontend, long and unweildy components, but it was a great learning experience.",
+          text: "I made a lot of mistakes when building this (only using class components, long and unweildy files, among others), but it was a great learning experience.",
           key: "3",
         },
         {
