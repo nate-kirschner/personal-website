@@ -11,11 +11,10 @@ export default function AboutMe() {
 
         <AboutSection
           iconVariant="education"
-          text="I'm in my fourth year at Northeastern:"
+          text="I just graduated from Northeastern in May 2024:"
           bullets={[
             { bullet: "Major: Computer Science", key: "major" },
             { bullet: "Minor: Business Administration", key: "minor" },
-            { bullet: "Expected Graduation: May 2024", key: "grad" },
           ]}
         />
 
@@ -23,20 +22,20 @@ export default function AboutMe() {
           iconVariant="work"
           text="My work experience includes:"
           bullets={[
-            { bullet: "6 month Frontend Co-op at Flexcar", key: "flexcar" },
+            { bullet: "6 month Frontend Co-op at Flexcar.", key: "flexcar" },
             {
               bullet:
-                "6 month Software Development Co-op at PowerAdvocate (now WoodMackenzie)",
+                "6 month Full-Stack Software Development Co-op at WoodMackenzie.",
               key: "PA",
             },
             {
               bullet:
-                "2 semesters as a Teaching Assistant for Object Oriented Deisgn and Logic and Computation classes",
+                "2 semesters as a Teaching Assistant for Object Oriented Deisgn and Logic and Computation classes.",
               key: "TA",
             },
             {
               bullet:
-                "1 year as developer for Code 4 Community Club, now tech lead for the upcoming year.",
+                "2 years in Code 4 Community Club at Northeastern. 1 year as the tech lead for my team and 1 year as a developer.",
               key: "C4C",
             },
           ]}

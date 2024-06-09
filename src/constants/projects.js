@@ -21,15 +21,19 @@ const projects = [
       ],
       bullets: [
         {
-          text: "When starting to build my personal website, I searched for sources of inspiration on the internet",
+          text: "When starting to build my personal website (which you're on right now), I wanted some way to get constructive critiques on what I had made.",
         },
         {
-          text: "Built a website for developers to share their personal websites and receive feedback on their work",
+          text: "Coming up short, I decided to build a website for developers to share their personal websites and receive feedback on their work.",
           key: "1",
         },
         {
-          text: "Learned how to use a variety of AWS services and troubleshot issues, in order to deploy a serverless backend with AWS Lambda",
+          text: "During this process, I learned how to use a variety of AWS services in order to deploy a serverless backend to accompany the React frontend.",
           key: "2",
+        },
+        {
+          text: "The final product provides the ability to post websites with an optional comment section so other developers can leave reviews and suggestions.",
+          key: "3",
         },
       ],
       url: "https://ratemysite.xyz",
@@ -49,15 +53,15 @@ const projects = [
       ],
       bullets: [
         {
-          text: "Created a fantasy golf website that allows over 30 users to view live scores, join leagues with friends, and create weekly rosters",
+          text: "I built a fantasy golf website that allows over 30 users to view live scores, join leagues with friends, and create weekly rosters.",
           key: "1",
         },
         {
-          text: "Designed frontend UI mockups, implemented a ReactJS frontend, and created a REST API using NodeJS and Express",
+          text: "The work for this included designing frontend UI mockups, implementing a ReactJS frontend, and creating a REST API using NodeJS and Express.",
           key: "2",
         },
         {
-          text: "Deployed entire stack on an EC2, set up Nginx server and SSL certificate, and created CloudWatch alarms to monitor reachability",
+          text: "I deployed the server on an EC2 instance, set up an Nginx server and SSL certificate, and created CloudWatch alarms to monitor reachability.",
           key: "3",
         },
       ],
@@ -72,15 +76,15 @@ const projects = [
       images: ["pseudonote/pseudonote-1.png"],
       bullets: [
         {
-          text: "I competed in HackBeanpot 2022 Hackathon and created a a note-taking website which allows switching between text and code formatting",
+          text: "I competed with a partner in the HackBeanpot 2022 Hackathon and created a note-taking application which allows switching between text and code formatting.",
           key: "1",
         },
         {
-          text: "We utilized ReactJs for the frontend. Instead of a backend, we built in functionality to download notes to keep their formatting and reupload previously created documents",
+          text: "We utilized ReactJs for the frontend. Instead of a backend, we built in functionality to download notes to keep their formatting and reupload previously created documents.",
           key: "2",
         },
         {
-          text: "I worked with a partner to build the entire app in 48 hours",
+          text: "My partner and I built the entire app in 48 hours, solving a real pain point in our everyday lives as computer science students.",
           key: "3",
         },
       ],
@@ -89,14 +93,13 @@ const projects = [
   },
   {
     title: "The Other Half's News",
-    description:
-      "My first React website: A news aggregator which sorts articles by political bias.",
+    description: "A news aggregator which sorts articles by political bias.",
     techUsed: ["ReactJS"],
     drawer: {
       images: ["tohnews/tohnews-1.png"],
       bullets: [
         {
-          text: "I used this site to teach myself ReactJs.",
+          text: "My first experience with web development, this website served as a self-teaching tool for me to learn React.",
           key: "1",
         },
         {
