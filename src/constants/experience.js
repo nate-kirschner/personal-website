@@ -1,5 +1,15 @@
 const experience = [
   {
+    company: "Air Space Intelligence",
+    positions: [
+      {
+        key: "ASI",
+        title: "Software Developer",
+        date: "Aug. 2024 - Present",
+      },
+    ],
+  },
+  {
     company: "Flexcar",
     positions: [
       {

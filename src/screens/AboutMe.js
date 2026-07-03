@@ -10,34 +10,29 @@ export default function AboutMe() {
         <p className="">Here's the short version:</p>
 
         <AboutSection
-          iconVariant="education"
-          text="I just graduated from Northeastern in May 2024:"
-          bullets={[
-            { bullet: "Major: Computer Science", key: "major" },
-            { bullet: "Minor: Business Administration", key: "minor" },
-          ]}
-        />
-
-        <AboutSection
           iconVariant="work"
           text="My work experience includes:"
           bullets={[
+            {
+              bullet:
+                "Currently working at Air Space Intelligence as a fullstack software developer since August 2024.",
+              key: "ASI",
+            },
             { bullet: "6 month Frontend Co-op at Flexcar.", key: "flexcar" },
             {
               bullet:
                 "6 month Full-Stack Software Development Co-op at WoodMackenzie.",
               key: "PA",
             },
-            {
-              bullet:
-                "2 semesters as a Teaching Assistant for Object Oriented Deisgn and Logic and Computation classes.",
-              key: "TA",
-            },
-            {
-              bullet:
-                "2 years in Code 4 Community Club at Northeastern. 1 year as the tech lead for my team and 1 year as a developer.",
-              key: "C4C",
-            },
+          ]}
+        />
+
+        <AboutSection
+          iconVariant="education"
+          text="Graduated from Northeastern in May 2024:"
+          bullets={[
+            { bullet: "Major: Computer Science", key: "major" },
+            { bullet: "Minor: Business Administration", key: "minor" },
           ]}
         />
 

@@ -20,10 +20,6 @@ const MenuItems = ({ onClick }) => {
         <span className="item-text">About</span>
         <MenuItemArrow />
       </a>
-      <a href="#projects" className="item" onClick={onClick}>
-        <span className="item-text">Projects</span>
-        <MenuItemArrow />
-      </a>
       <a href="#experience" className="item" onClick={onClick}>
         <span className="item-text">Experience</span>
         <MenuItemArrow />

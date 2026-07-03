@@ -43,14 +43,14 @@ export default function ExperienceCard({
           );
         })}
         <p className="description">{description}</p>
-        {drawer && drawer.bullets.length !== 0 && (
+        {/* {drawer && drawer.bullets.length !== 0 && (
           <button
             className="more-details"
             onClick={() => setIsDrawerOpen(true)}
           >
             More details
           </button>
-        )}
+        )} */}
       </div>
 
       {drawer && (
